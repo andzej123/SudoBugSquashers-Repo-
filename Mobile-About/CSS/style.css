@@ -47,6 +47,8 @@ div h2 {
 }
 
 .div4 {
+    margin-top:50px;
+    margin-bottom:50px;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     border-color: rgb(108, 130, 148);
