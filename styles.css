@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans&display=swap");
+/* font-family: 'DM Serif Display', serif; */
+/* font-family: 'Public Sans', sans-serif; */
+
 :root {
   --link-water-white: #fbfcfe;
   --circle: #d1dae2;
@@ -7,16 +11,12 @@
   --charm-pink: #da6d97;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans&display=swap");
-/* font-family: 'DM Serif Display', serif; */
-/* font-family: 'Public Sans', sans-serif; */
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #EDF3F8;
+  background-color: #edf3f8;
   margin: 0;
   padding: 0;
   font-family: "Public Sans", sans-serif;
@@ -47,7 +47,7 @@ body {
 
 .circle_top {
   background-color: var(--circle);
-  top: -545px;
+  top: -548px;
   left: -202px;
   z-index: -1;
 }
@@ -87,10 +87,11 @@ body {
 
 .burger_button {
   border: none;
+  height: 17px;
   background-color: var(--circle);
   padding: 0;
   margin-right: 24px;
-  margin-top: 39px;
+  margin-top: 51px;
 }
 
 .burger_menu {
@@ -121,6 +122,7 @@ body {
   width: fit-content;
   margin: 0;
   position: relative;
+  margin-right: 2px;
 }
 
 .burger_menu_line {
@@ -128,7 +130,7 @@ body {
   height: 1px;
   border: 1px solid var(--link-water-white);
   opacity: 0.15;
-  margin-top: 23px;
+  margin-top: 22px;
   margin-bottom: 42px;
 }
 
@@ -170,14 +172,16 @@ body {
   color: #fbfcfe;
   text-align: center;
   font-weight: 700;
-  letter-spacing: -0.115px;
+  letter-spacing: 0.7px;
+  padding-top: 3px;
+  padding-left: 10px;
 }
 
 /* >>>>>>>>>>>>>>>>> Header <<<<<<<<<<<<<<<<<< */
 
 .header_phone {
   text-align: center;
-  margin-top: 32px;
+  margin-top: 28px;
 }
 
 .header_phone img {
@@ -188,7 +192,7 @@ header h1 {
   font-family: "DM Serif Display", serif;
   font-size: 32px;
   color: #36536b;
-  margin: 24px;
+  margin: 20px 24px 24px 24px;
   text-align: center;
   line-height: 36px;
   letter-spacing: -0.246px;
@@ -210,16 +214,17 @@ header h1 {
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
   width: 327px;
   height: 48px;
-  flex-shrink: 0;
-  color: #36536B;
+  color: #36536b;
   font-size: 15px;
   font-weight: 700;
-  padding: 15px 27px;
+  padding: 0px 27px;
+  padding-top: 4px;
   margin-bottom: 16px;
 }
 
 .header_form input::placeholder {
-  color: #37546d80;
+  color: #36536b;
+  opacity: 0.5;
 }
 
 .schedule-a-demo {
@@ -232,7 +237,9 @@ header h1 {
   color: #fbfcfe;
   text-align: center;
   font-weight: 700;
-  letter-spacing: 0.25px;
+  letter-spacing: 0.7px;
+  padding-top: 4px;
+  padding-left: 11px;
 }
 
 header p {
@@ -253,17 +260,19 @@ header span {
   background-color: var(--mirage-blue);
   position: relative;
   overflow: hidden;
-  padding: 80px 24px;
+  padding: 80px 18px;
 }
 
 .ps_logos_section {
   position: relative;
   z-index: 5;
+  margin: 0 24px;
 }
 
 .ps_logos_section div {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .ps_logos_section div:nth-child(1) {
@@ -286,7 +295,9 @@ header span {
   font-size: 32px;
   line-height: 36px;
   letter-spacing: -0.246px;
-  margin-top: 56px;
+  margin: 56px 11px 17px 11px;
+  letter-spacing: 0.1px;
+  word-spacing: -1px;
 }
 
 .partners_section p {
@@ -294,7 +305,7 @@ header span {
   text-align: center;
   line-height: 28px;
   opacity: 0.7;
-  margin-top: 16px;
+  margin-top: 0;
 }
 
 .ps_about_us {
@@ -305,20 +316,22 @@ header span {
 .ps_about_us button {
   width: 129px;
   height: 48px;
-  flex-shrink: 0;
   border-radius: 24px;
   border: 1px solid #fbfcfe;
   background-color: rgba(255, 0, 0, 0);
   color: #fbfcfe;
   text-align: center;
   font-weight: 700;
-  letter-spacing: -0.115px;
+  letter-spacing: 0.415px;
+  position: relative;
+  padding-top: 4px;
+  word-spacing: 1px;
 }
 
 /* >>>>>>  api logo <<<<<<<<<< */
 
 .api_section {
-  padding: 0 24px;
+  padding: 0 18px;
   margin-top: 80px;
 }
 
@@ -332,9 +345,9 @@ header span {
   font-family: "DM Serif Display", serif;
   font-size: 36px;
   line-height: 36px;
+  margin-top: 45px;
+  margin-bottom: 22px;
   letter-spacing: -0.277px;
-  margin-top: 48px;
-  margin-bottom: 24px;
 }
 
 .api_section p {
@@ -351,15 +364,16 @@ header span {
 .dual_phones {
   display: flex;
   justify-content: center;
-  gap: 27px;
+  gap: 24px;
   margin-top: 79px;
+  margin-bottom: 50px;
 }
 
 /* >>>>>>> Pricing Cards <<<<<< */
 
 .pricing_cards_section {
   text-align: center;
-  padding: 0 24px;
+  padding: 0 18px;
 }
 
 .pricing_cards_section h3 {
@@ -368,16 +382,23 @@ header span {
   font-weight: 700;
   line-height: 25px;
   letter-spacing: -0.138px;
-  margin-top: 32px;
-  margin-bottom: 16px;
+  margin-top: 31px;
+  margin-bottom: 14px;
+  word-spacing: 1.5px;
+}
+
+.pricing_cards_section h3:nth-child(5),
+.pricing_cards_section h3:nth-child(8) {
+  margin-top: 29px;
 }
 
 .pricing_cards_section p {
   color: #6c8294;
   text-align: center;
   line-height: 25px;
-  letter-spacing: -0.115px;
   margin-bottom: 49px;
+  padding: 0px 5px;
+  letter-spacing: -0.115px;
 }
 
 /*  >>>>>> Footer <<<<<<< */
@@ -393,6 +414,10 @@ header span {
 .footer_list {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 37px 0;
 }
 
 .footer_list li {
@@ -436,13 +461,7 @@ footer form {
 .social_media a {
   display: grid;
   align-items: center;
-}
-
-.footer_list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 39px 0;
+  margin-top: 4px;
 }
 
 /*   >>>>>>>> Hover states <<<<<<<<<< */
@@ -460,7 +479,8 @@ footer form {
   opacity: 1;
 }
 
-.schedule-a-demo-burger:hover {
+.schedule-a-demo-burger:hover,
+.schedule-a-demo:hover {
   cursor: pointer;
   background-color: var(--charm-pink);
 }
@@ -469,8 +489,7 @@ footer form {
   cursor: pointer;
 }
 
-.schedule-a-demo:hover {
-  background-color: var(--charm-pink);
+.social_media a:hover {
   cursor: pointer;
 }
 
@@ -481,7 +500,16 @@ footer form {
 }
 
 .social_media img:hover {
-  filter: invert(33%) sepia(75%) saturate(701%) hue-rotate(290deg) brightness(91%) contrast(88%);
+  filter: invert(33%) sepia(75%) saturate(701%) hue-rotate(290deg)
+    brightness(91%) contrast(88%);
+}
+
+.footer_list li:hover {
+  z-index: 2;
+}
+
+.footer_list a:hover {
+  z-index: 2;
 }
 
 /* >>>>>>>>>>> Active states <<<<<<<<<<<<< */
@@ -501,3 +529,6 @@ footer form {
 .footer_list li:active {
   transform: translateY(2px);
 }
+
+
+
