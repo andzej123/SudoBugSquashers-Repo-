@@ -13,6 +13,7 @@ body {
     font-size: 15px;
     text-align: center;
     width: 375px;
+    
 }
 
 main {
@@ -25,10 +26,14 @@ main {
 .div h1,
 h2 {
     font-family: DM Serif Display;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .div1 {
     color: rgb(54, 83, 107);
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 div p {
@@ -36,22 +41,35 @@ div p {
     font-family: Public Sans;
     font-size: 15px;
     line-height: 28px;
+    padding-left: 24px;
+    padding-right: 24px;
+    
+    
 }
 
 div h2 {
     color: rgb(54, 83, 107);
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .div4 h1 {
     color: rgb(186, 66, 112);
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .div4 {
     margin-top:50px;
     margin-bottom:50px;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    border-color: rgb(108, 130, 148);
+    margin-left: 24px;
+    margin-right: 24px;
+    border-bottom: 1px solid #36536B;
+    border-top: 1px solid #36536B;
+    border-color: #36536B;
+    flex-shrink: 0;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .email {
@@ -66,6 +84,9 @@ div h2 {
     border-radius: 40;
     background-color: rgb(186, 66, 112);
     color: rgb(251, 252, 254);
+}
+.image{
+    width: 375px;
 }
 
 header {
@@ -121,15 +142,10 @@ body nav {
   }
 
 .schedule-a-demo:hover {
-    background-color: var(--charm-pink);
+    background-color: rgb(218, 109, 151);
     cursor: pointer;
 }
 
-.ps_about_us button:hover {
-    color: var(--mirage-blue);
-    background-color: var(--link-water-white);
-    cursor: pointer;
-}
 
 .social_media img:hover {
     filter: invert(33%) sepia(75%) saturate(701%) hue-rotate(290deg) brightness(91%) contrast(88%);
