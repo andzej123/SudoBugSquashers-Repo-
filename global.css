@@ -3,14 +3,14 @@
 :root {
   /* 01 Colors */
   /* PRIMARY */
-  --DarkPink: rgb(186, 66, 112);
-  --LinkWaterWhite: rgb(251, 252, 254);
+  --DarkPink: #BA4270;
+  --LinkWaterWhite: #FBFCFE;
 
   /* SECONDARY */
-  --SanJuanBlue: rgb(54, 83, 107);
-  --MirageBlue: rgb(27, 38, 47);
-  --CharmPink: rgb(218, 109, 151);
-  --LightSanJuanBlue: rgb(108, 130, 148);
+  --SanJuanBlue: #36536B;
+  --MirageBlue: #1B262F;
+  --CharmPink: #DA6D97;
+  --LightSanJuanBlue: #6C8294;
 
   /* 02 Typography */
   /* HEADINGS */
@@ -161,6 +161,6 @@
     cursor: default;
   }
 }
-button {
+/* button {
   border-style: solid;
-}
+} */
