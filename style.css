@@ -82,7 +82,7 @@ body {
 
 .pay_api_logo {
   margin-left: 24px;
-  margin-top: 40px;
+  
 }
 
 .burger_button {
@@ -200,6 +200,8 @@ header h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+ 
 }
 
 .header_form input {
@@ -388,11 +390,16 @@ header span {
   padding: 41px 20px 55px 20px;
   position: relative;
   overflow: hidden;
+  height: 353px;
 }
 
 .footer_list {
   list-style-type: none;
   padding: 0;
+  margin-top: 20px;
+  
+ 
+  
 }
 
 .footer_list li {
@@ -431,6 +438,7 @@ footer form {
   display: flex;
   justify-content: center;
   gap: 24px;
+  margin-top: -40px;
 }
 
 .social_media a {
@@ -504,6 +512,7 @@ footer form {
 
 #figure  {
     position: absolute;
+    width: 295px;
     top: 0px; 
     right: 0px; 
     z-index: 0;
@@ -519,23 +528,26 @@ footer form {
   
   .payapi{
     padding: 35px;
+    
   }
-  
+
+
   .Pricing{
-    margin-top: 70px;
+    margin-top: 45px;
     color: #36536B;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 36px;
     font-family: "DM Serif Display", serif;
   }
-  .cost{
-    
+  .cost{ 
+
+    margin-top: 105px;
+    margin-left: 20px;
         color: #36536B;
         text-align: center;
-        font-size: 40px;
+        font-size: 35px;
         line-height: 36px;
-        margin-top: 130px;
         font-family: "DM Serif Display", serif;
         
         
@@ -552,18 +564,23 @@ footer form {
     font-family: "DM Serif Display", serif;
     text-align: center;
     color:#BA4270;
-    font-size: 22px;
-    margin-top: 80px;
+    font-size: 20px;
+    font-weight: 400;
+   margin-top: 45px;
+   
     
   }
 
 
   .underline1 {
+    
     border: 1px solid #36536B;
-    opacity: 25%;
-    margin: 18px;
+    flex-shrink: 0;
+    opacity: 0.25;
+    border-bottom: 1px;
+    margin: 22px;
     box-sizing: border-box;
-    width: calc(100% - 20px);
+    width: calc(100% -50%);
   }
   
 .options{
@@ -614,18 +631,21 @@ footer form {
   display: inline-block;
   border-radius: 25px;
   background-color: #EDF3F8;
-  border: 2px solid #36536B;
+  border: 1px solid #36536B;
   color: #36536B;
   text-align: center;
-  font-size: 16px;
-  padding: 10px 24px;
+  font-size: 15px;
+  padding: 10px 25px;
   transition: all 0.5s;
   cursor: pointer;
   text-decoration: none;
-  margin-bottom: 10px;
   font-weight: 550;
-  width: 176px;
+  width: 168px;
   height: 48px;
+  line-height: 25px;
+
+  
+ 
 }
 
 .button:hover {
@@ -663,12 +683,16 @@ li::before {
 
 .checked::before {
   content: url('/images/check.svg');
+  margin-top: 2px;
 }
+
+
+
 
 
 .grayed-out {
   color: gray;
-  margin-left: 8px;
+ margin: 8px;
 }
 
 
@@ -789,7 +813,7 @@ li::before {
   border: none;
   background-color: var(--circle);
   padding: 0;
-  margin-right: 24px;
+  margin-right: 0px;
   margin-top: 39px;
 }
 
@@ -881,6 +905,7 @@ li::before {
   padding: 41px 20px 55px 20px;
   position: relative;
   overflow: hidden;
+  
 }
 
 .footer_list {
