@@ -1,22 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans&display=swap");
+@import "global.css";
 /* font-family: 'DM Serif Display', serif; */
 /* font-family: 'Public Sans', sans-serif; */
-
-:root {
-  --link-water-white: #fbfcfe;
-  --circle: #d1dae2;
-  --burger-menu-circle: #1f2c38;
-  --mirage-blue: #1b262f;
-  --dark-pink: #ba4270;
-  --charm-pink: #da6d97;
-}
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #edf3f8;
+  background-color: var(--BgColor);
   margin: 0;
   padding: 0;
   font-family: "Public Sans", sans-serif;
@@ -46,27 +37,27 @@ body {
 }
 
 .circle_top {
-  background-color: var(--circle);
+  background-color: var(--CircleColor);
   top: -548px;
   left: -202px;
   z-index: -1;
 }
 
 .circle_burger_menu {
-  background-color: var(--burger-menu-circle);
+  background-color: var(--CircleBlackBg);
   top: -545px;
   left: -282px;
 }
 
 .circle_partners_section {
-  background-color: var(--burger-menu-circle);
+  background-color: var(--CircleBlackBg);
   top: -600px;
   left: -202px;
   z-index: 0;
 }
 
 .circle_footer {
-  background-color: var(--burger-menu-circle);
+  background-color: var(--CircleBlackBg);
   top: 176px;
   left: -202px;
   z-index: 0;
@@ -88,7 +79,7 @@ body {
 .burger_button {
   border: none;
   height: 17px;
-  background-color: var(--circle);
+  background-color: var(--CircleColor);
   padding: 0;
   margin-right: 24px;
   margin-top: 51px;
@@ -98,7 +89,7 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: var(--mirage-blue);
+  background-color: var(--MirageBlue);
   width: 80%;
   max-width: 500px;
   padding: 48px 24px;
@@ -128,7 +119,7 @@ body {
 .burger_menu_line {
   width: 249px;
   height: 1px;
-  border: 1px solid var(--link-water-white);
+  border: 1px solid var(--LinkWaterWhite);
   opacity: 0.15;
   margin-top: 22px;
   margin-bottom: 42px;
@@ -154,7 +145,7 @@ body {
 
 .burger_menu_list a {
   text-decoration: none;
-  color: var(--link-water-white);
+  color: var(--LinkWaterWhite);
   opacity: 0.7;
 }
 
@@ -163,13 +154,13 @@ body {
 }
 
 .schedule-a-demo-burger {
-  background-color: var(--dark-pink);
+  background-color: var(--DarkPink);
   border: none;
   width: 252px;
   height: 48px;
   border-radius: 24px;
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-  color: #fbfcfe;
+  color: var(--LinkWaterWhite);
   text-align: center;
   font-weight: 700;
   letter-spacing: 0.7px;
@@ -191,7 +182,7 @@ body {
 header h1 {
   font-family: "DM Serif Display", serif;
   font-size: 32px;
-  color: #36536b;
+  color: var(--SanJuanBlue);
   margin: 20px 24px 24px 24px;
   text-align: center;
   line-height: 36px;
@@ -210,11 +201,11 @@ header h1 {
   border: none;
   outline: none;
   border-radius: 24px;
-  background: #fbfcfe;
+  background: var(--LinkWaterWhite);
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
   width: 327px;
   height: 48px;
-  color: #36536b;
+  color: var(--SanJuanBlue);
   font-size: 15px;
   font-weight: 700;
   padding: 0px 27px;
@@ -223,18 +214,18 @@ header h1 {
 }
 
 .header_form input::placeholder {
-  color: #36536b;
+  color: var(--SanJuanBlue);
   opacity: 0.5;
 }
 
 .schedule-a-demo {
-  background-color: var(--dark-pink);
+  background-color: var(--DarkPink);
   border: none;
   width: 327px;
   height: 48px;
   border-radius: 24px;
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-  color: #fbfcfe;
+  color: var(--LinkWaterWhite);
   text-align: center;
   font-weight: 700;
   letter-spacing: 0.7px;
@@ -243,21 +234,22 @@ header h1 {
 }
 
 header p {
-  color: #6c8294;
+  color: var(--LightSanJuanBlue);
   text-align: center;
   margin-top: 24px;
   margin-bottom: 80px;
+  padding-right: 4px;
 }
 
 header span {
-  color: #6c8294;
+  color: var(--LightSanJuanBlue);
   font-weight: 700;
 }
 
 /* >>>>>>>>>>>>>> Partners Section  <<<<<<<<<<<<<<<<<<< */
 
 .partners_section {
-  background-color: var(--mirage-blue);
+  background-color: var(--MirageBlue);
   position: relative;
   overflow: hidden;
   padding: 80px 18px;
@@ -289,7 +281,7 @@ header span {
 }
 
 .partners_section h2 {
-  color: #fbfcfe;
+  color: var(--LinkWaterWhite);
   text-align: center;
   font-family: "DM Serif Display", serif;
   font-size: 32px;
@@ -301,7 +293,7 @@ header span {
 }
 
 .partners_section p {
-  color: #fbfcfe;
+  color: var(--LinkWaterWhite);
   text-align: center;
   line-height: 28px;
   opacity: 0.7;
@@ -317,9 +309,9 @@ header span {
   width: 129px;
   height: 48px;
   border-radius: 24px;
-  border: 1px solid #fbfcfe;
+  border: 1px solid var(--LinkWaterWhite);
   background-color: rgba(255, 0, 0, 0);
-  color: #fbfcfe;
+  color: var(--LinkWaterWhite);
   text-align: center;
   font-weight: 700;
   letter-spacing: 0.415px;
@@ -340,7 +332,7 @@ header span {
 }
 
 .api_section h2 {
-  color: #36536b;
+  color: var(--SanJuanBlue);
   text-align: center;
   font-family: "DM Serif Display", serif;
   font-size: 36px;
@@ -351,7 +343,7 @@ header span {
 }
 
 .api_section p {
-  color: #6c8294;
+  color: var(--LightSanJuanBlue);
   text-align: center;
   line-height: 28px;
   margin-bottom: 80px;
@@ -377,7 +369,7 @@ header span {
 }
 
 .pricing_cards_section h3 {
-  color: #36536b;
+  color: var(--SanJuanBlue);
   font-size: 18px;
   font-weight: 700;
   line-height: 25px;
@@ -393,7 +385,7 @@ header span {
 }
 
 .pricing_cards_section p {
-  color: #6c8294;
+  color: var(--LightSanJuanBlue);
   text-align: center;
   line-height: 25px;
   margin-bottom: 49px;
@@ -404,7 +396,7 @@ header span {
 /*  >>>>>> Footer <<<<<<< */
 
 .footer_black {
-  background-color: var(--mirage-blue);
+  background-color: var(--MirageBlue);
   text-align: center;
   padding: 41px 20px 55px 20px;
   position: relative;
@@ -430,13 +422,13 @@ header span {
 
 .footer_list a {
   text-decoration: none;
-  color: #fbfcfe;
+  color: var(--LinkWaterWhite);
   font-weight: 700;
   opacity: 0.7;
 }
 
 footer h2 {
-  color: #36536b;
+  color: var(--SanJuanBlue);
   text-align: center;
   font-family: "DM Serif Display", serif;
   font-size: 32px;
@@ -482,7 +474,7 @@ footer form {
 .schedule-a-demo-burger:hover,
 .schedule-a-demo:hover {
   cursor: pointer;
-  background-color: var(--charm-pink);
+  background-color: var(--CharmPink);
 }
 
 .header_form input:hover {
@@ -494,8 +486,8 @@ footer form {
 }
 
 .ps_about_us button:hover {
-  color: var(--mirage-blue);
-  background-color: var(--link-water-white);
+  color: var(--MirageBlue);
+  background-color: var(--LinkWaterWhite);
   cursor: pointer;
 }
 
@@ -529,6 +521,3 @@ footer form {
 .footer_list li:active {
   transform: translateY(2px);
 }
-
-
-
