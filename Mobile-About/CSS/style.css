@@ -112,7 +112,7 @@ body nav {
 
 .schedule-a-demo-burger:hover {
   cursor: pointer;
-  background-color: var(--charm-pink);
+  background-color: rgb(218, 109, 151);
 }
 
 .header_form input:hover {
