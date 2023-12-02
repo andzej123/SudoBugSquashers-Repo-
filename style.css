@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: #EDF3F8;
+  background-color: #edf3f8;
   margin: 0;
   padding: 0;
   font-family: "Public Sans", sans-serif;
@@ -70,7 +70,7 @@ body {
   top: 176px;
   left: -202px;
   z-index: 0;
-} 
+}
 
 /* <><><><><><><>   Burger Menu  <><><><><><><><><> */
 
@@ -82,7 +82,6 @@ body {
 
 .pay_api_logo {
   margin-left: 24px;
-  
 }
 
 .burger_button {
@@ -200,7 +199,8 @@ header h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  margin-top: -25px;
+  margin-left: 8px;
  
 }
 
@@ -213,7 +213,7 @@ header h1 {
   width: 327px;
   height: 48px;
   flex-shrink: 0;
-  color: #36536B;
+  color: #36536b;
   font-size: 15px;
   font-weight: 700;
   padding: 15px 27px;
@@ -235,6 +235,7 @@ header h1 {
   text-align: center;
   font-weight: 700;
   letter-spacing: 0.25px;
+  margin-left: -10px;
 }
 
 header p {
@@ -396,9 +397,6 @@ header span {
 .footer_list {
   list-style-type: none;
   padding: 0;
-  margin-top: 20px;
-  
- 
   
 }
 
@@ -415,6 +413,12 @@ header span {
   color: #fbfcfe;
   font-weight: 700;
   opacity: 0.7;
+  margin-right: 20px;
+  margin-top: -48px;
+}
+
+.pricinglink{
+  transform: translateY(20px);
 }
 
 footer h2 {
@@ -489,7 +493,8 @@ footer form {
 }
 
 .social_media img:hover {
-  filter: invert(33%) sepia(75%) saturate(701%) hue-rotate(290deg) brightness(91%) contrast(88%);
+  filter: invert(33%) sepia(75%) saturate(701%) hue-rotate(290deg)
+    brightness(91%) contrast(88%);
 }
 
 /* >>>>>>>>>>> Active states <<<<<<<<<<<<< */
@@ -510,114 +515,106 @@ footer form {
   transform: translateY(2px);
 }
 
-#figure  {
-    position: absolute;
-    width: 295px;
-    top: 0px; 
-    right: 0px; 
-    z-index: 0;
-    
-  }
-  #brgmenu{
-    position: absolute;
-    top: 65px;
-    right :20px;
-    z-index:1;
-  }
-
-  
-  .payapi{
-    padding: 35px;
-    
-  }
-
-
-  .Pricing{
-    margin-top: 45px;
-    color: #36536B;
-    text-align: center;
-    font-size: 20px;
-    line-height: 36px;
-    font-family: "DM Serif Display", serif;
-  }
-  .cost{ 
-
-    margin-top: 105px;
-    margin-left: 20px;
-        color: #36536B;
-        text-align: center;
-        font-size: 35px;
-        line-height: 36px;
-        font-family: "DM Serif Display", serif;
-        
-        
-     
-  }
-
-  body{
-    background-color:  #EDF3F8;
-    font-family: "Public Sans", sans-serif;
-    
-  }
-
-  .Plans{
-    font-family: "DM Serif Display", serif;
-    text-align: center;
-    color:#BA4270;
-    font-size: 20px;
-    font-weight: 400;
-   margin-top: 45px;
-   
-    
-  }
-
-
-  .underline1 {
-    
-    border: 1px solid #36536B;
-    flex-shrink: 0;
-    opacity: 0.25;
-    border-bottom: 1px;
-    margin: 22px;
-    box-sizing: border-box;
-    width: calc(100% -50%);
-  }
-  
-.options{
-    text-align: center;
-    color:#36536B;
-
+#figure {
+  position: absolute;
+  width: 295px;
+  top: 0px;
+  right: 0px;
+  z-index: 0;
+}
+#brgmenu {
+  position: absolute;
+  top: 65px;
+  right: 20px;
+  z-index: 1;
 }
 
-  
+.payapi {
+  padding: 35px;
+}
 
+.Pricing {
+  margin-top: 45px;
+  color: #36536b;
+  text-align: center;
+  font-size: 20px;
+  line-height: 36px;
+  font-family: "DM Serif Display", serif;
+}
+.cost {
+  margin-top: 105px;
+  color: #36536b;
+  text-align: center;
+  font-size: 35px;
+  line-height: 36px;
+  font-family: "DM Serif Display", serif;
+}
+
+body {
+  background-color: #edf3f8;
+  font-family: "Public Sans", sans-serif;
+}
+.FreePlan{
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+  color: #ba4270;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 45px;
+}
+.BasicPlan {
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+  color: #ba4270;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: -8px;
+}
+.PremiumPlan {
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+  color: #ba4270;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: -6px;
+}
+
+.underline1 {
+  border: 1px solid #36536b;
+  flex-shrink: 0;
+  opacity: 0.25;
+  border-bottom: 1px;
+  margin: 22px;
+  transform: translateY(-8px);
+  box-sizing: border-box;
+  width: calc(100% -50%);
+}
+
+.options {
+  text-align: center;
+  color: #36536b;
+}
 
 .container {
-    display: flex;
-    flex-direction: column;
-   
-    margin: 0 auto;
-    align-items: center;
-    vertical-align: center;
-    
-  }
-  .checklist {
-    display: flex;
-    align-items: center;
-    width: max-content;
-    padding: 8px
-  }
-  .checklist img {
-    margin-right: 10px;
-  }
-  .checklist h5 {
-    margin: 0;
-  }
-  
+  display: flex;
+  flex-direction: column;
 
-
-
-
+  margin: 0 auto;
+  align-items: center;
+  vertical-align: center;
+}
+.checklist {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  padding: 8px;
+}
+.checklist img {
+  margin-right: 10px;
+}
+.checklist h5 {
+  margin: 0;
+}
 
 .container {
   display: flex;
@@ -626,13 +623,21 @@ footer form {
   height: 10vh;
 }
 
+.footerTitle{
+
+    transform: translateY(-25px);
+}
+.email{
+  margin-left: -10px;
+}
+
 .button {
   font-family: "Public Sans", sans-serif;
   display: inline-block;
   border-radius: 25px;
-  background-color: #EDF3F8;
-  border: 1px solid #36536B;
-  color: #36536B;
+  background-color: #edf3f8;
+  border: 1px solid #36536b;
+  color: #36536b;
   text-align: center;
   font-size: 15px;
   padding: 10px 25px;
@@ -643,28 +648,23 @@ footer form {
   width: 168px;
   height: 48px;
   line-height: 25px;
-
-  
- 
+  margin-bottom: 36px;
 }
 
 .button:hover {
-  background-color: #36536B;
+  background-color: #36536b;
   color: white;
 }
-
-
 
 ul {
   font-family: "Public Sans", sans-serif;
   font-weight: 500;
   size: 16px;
   list-style-type: none;
-  padding: 0;
-  display:grid;
+ padding: 0;
+  display: grid;
   justify-content: center;
-  color: #36536B;
-  
+  color: #36536b;
 }
 
 li {
@@ -672,53 +672,48 @@ li {
   align-items: center;
   margin-bottom: 10px;
   width: fit-content;
-} 
+}
 
 li::before {
-  content: url('/images/transparent-placeholder.svg'); 
+  content: url("/images/transparent-placeholder.svg");
   display: inline-block;
-  width: 24px; 
-  height: 24px; 
+  width: 24px;
+  height: 24px;
+  
 }
 
 .checked::before {
-  content: url('/images/check.svg');
+  content: url("/images/check.svg");
   margin-top: 2px;
+  
 }
-
-
-
-
-
-.grayed-out {
-  color: gray;
- margin: 8px;
+.checked{
+  gap: 16px;
+  margin-left: -10px;
+  
 }
-
-
 
 .grayed-out {
   color: gray;
   pointer-events: none;
+ margin-left: 22px;
+ margin-bottom: 20px;
+
 }
+
 
 .grayed-out::before {
   content: "";
   display: inline-block;
-  width: 16px; 
-  height: 16px; 
+  width: 6px;
+  height: 16px;
 }
 
-
-
-
-
-.signUp{
+.signUp {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 .email {
   display: flex;
@@ -733,21 +728,21 @@ li::before {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 2px solid  #FBFCFE;
+  border: 2px solid #fbfcfe;
   border-radius: 25px;
-  background: #FBFCFE;
-  box-shadow: 10px 10px 25px -10px #36536B40;
+  background: #fbfcfe;
+  box-shadow: 10px 10px 25px -10px #36536b40;
 }
 
-.Demobtn{
-  background-color: #BA4270;
-  color: #FBFCFE;
+.Demobtn {
+  background-color: #ba4270;
+  color: #fbfcfe;
   width: 327px;
   height: 48px;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 2px solid  #FBFCFE;
+  border: 2px solid #fbfcfe;
   border-radius: 25px;
   text-decoration: none;
   display: flex;
@@ -755,48 +750,41 @@ li::before {
   align-items: center;
 }
 
-
-.signUp{
-  color:#36536B;
+.signUp {
+  color: #36536b;
 }
 
-.footerContainer{
-  background-color: #1B262F;
+.footerContainer {
+  background-color: #1b262f;
   height: 20vh;
-
 }
-.logo2{
+.logo2 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer{
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-
 }
 
-.links{
+.links {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 20px;
-
 }
 
+.link1 {
+  background-color: #fbfcfe;
 
-.link1{
-  background-color: #FBFCFE;
-
-  color:black;
+  color: black;
   text-decoration: none;
 }
-
-
 
 .burger_menu_logos {
   display: flex;
@@ -813,7 +801,7 @@ li::before {
   border: none;
   background-color: var(--circle);
   padding: 0;
-  margin-right: 0px;
+  margin-right: 25px;
   margin-top: 39px;
 }
 
@@ -897,15 +885,12 @@ li::before {
   letter-spacing: -0.115px;
 }
 
-
-
 .footer_black {
   background-color: var(--mirage-blue);
   text-align: center;
   padding: 41px 20px 55px 20px;
   position: relative;
   overflow: hidden;
-  
 }
 
 .footer_list {
@@ -962,9 +947,3 @@ footer form {
   align-items: center;
   margin: 39px 0;
 }
-
-
-
-
-
-
