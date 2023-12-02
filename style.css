@@ -421,6 +421,12 @@ header span {
   transform: translateY(20px);
 }
 
+.aboutlink{
+transform: translateY(3px);
+}
+.contactlink{
+  transform: translateY(-3px);
+  }
 footer h2 {
   color: #36536b;
   text-align: center;
@@ -689,15 +695,19 @@ li::before {
 }
 .checked{
   gap: 16px;
-  margin-left: -10px;
+  margin-left: -12px;
+  
+  
   
 }
 
 .grayed-out {
+ font-family: "Public Sans", sans-serif;
   color: gray;
   pointer-events: none;
  margin-left: 22px;
  margin-bottom: 20px;
+ 
 
 }
 
@@ -706,7 +716,7 @@ li::before {
   content: "";
   display: inline-block;
   width: 6px;
-  height: 16px;
+  height: 17px;
 }
 
 .signUp {
