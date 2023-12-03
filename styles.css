@@ -42,7 +42,7 @@ body {
 
 .circle_top {
   background-color: var(--CircleColor);
-  top: -548px;
+  top: -545px;
   left: -202px;
   z-index: -1;
 }
@@ -99,6 +99,7 @@ body {
   padding: 48px 24px;
   transition: 0.2s;
   min-height: 667px;
+  height: 100vh;
   transform: translateX(100vw);
   overflow: hidden;
   z-index: 7;
@@ -155,6 +156,8 @@ body {
 
 .schedule-a-demo-outer-burger {
   text-align: center;
+  position: relative;
+  z-index: 0;
 }
 
 .schedule-a-demo-burger {
@@ -171,7 +174,7 @@ body {
   padding-top: 3px;
   padding-left: 10px;
   font-size: 15px;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
 }
 
 /* >>>>>>>>>>>>>>>>> Header <<<<<<<<<<<<<<<<<< */
@@ -238,7 +241,7 @@ header h1 {
   padding-top: 2px;
   padding-left: 8px;
   font-size: 15px;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
 }
 
 header p {
@@ -529,3 +532,18 @@ footer form {
 .footer_list li:active {
   transform: translateY(2px);
 }
+
+/* .circle_top {
+  left: calc((100vw - 780px) / 2);
+}
+
+.circle_burger_menu {
+  left: calc((100vw - 780px) / 2 - 20.2vw);
+}
+
+@media only screen and (min-width: 625px) {
+  .circle_burger_menu {
+    left: calc((-255px - ((100vw - 625px)) * 0.7042253521126761));
+    left: -255px;
+  }
+} */
