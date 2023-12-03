@@ -22,11 +22,6 @@ const elements = [[email, emailContainer], [title, titleContainer], [message, me
 form.addEventListener('submit', (e) => {
     let hasErrors = false; 
 
-    if (email.value == '' || email.value == null) {
-        emailContainer.classList.add('not-empty');
-        hasErrors = true;
-    }
-
     if (title.value == '' || title.value == null) {
         titleContainer.classList.add('not-empty');
         hasErrors = true;
@@ -37,13 +32,22 @@ form.addEventListener('submit', (e) => {
         hasErrors = true;
     }
 
+    // Check email validation only if it's not empty
+    if (email.value != '' && email.value != null) {
+        const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+        if (!emailRegex.test(email.value.trim())) {
+            emailContainer.classList.add('invalid');
+            hasErrors = true;
+        }
+    }
+
     if (hasErrors) {
         e.preventDefault(); 
         return false; 
     } else {
         console.log('Form submitted successfully');
-        
-        return false; 
+        return true; 
     }
 });
 
