@@ -681,7 +681,7 @@ li {
 }
 
 li::before {
-  content: url("/images/transparent-placeholder.svg");
+  content: url("/assets/images/transparent-placeholder.svg");
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -689,7 +689,7 @@ li::before {
 }
 
 .checked::before {
-  content: url("/images/check.svg");
+  content: url("/assets/images/check.svg");
   margin-top: 2px;
   
 }
