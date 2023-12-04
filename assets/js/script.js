@@ -8,5 +8,3 @@ const myFunction = () => {
 
 button.addEventListener("click", myFunction);
 closeButton.addEventListener("click", myFunction);
-
-
