@@ -170,6 +170,7 @@ body {
   text-align: center;
   font-weight: 700;
   letter-spacing: -0.115px;
+  
 }
 
 /* >>>>>>>>>>>>>>>>> Header <<<<<<<<<<<<<<<<<< */
@@ -569,7 +570,7 @@ body {
   color: #ba4270;
   font-size: 20px;
   font-weight: 400;
-  margin-top: 45px;
+  /* margin-top: 45px; */
 }
 .BasicPlan {
   font-family: "DM Serif Display", serif;
@@ -577,7 +578,7 @@ body {
   color: #ba4270;
   font-size: 20px;
   font-weight: 400;
-  margin-top: -8px;
+  /* margin-top: -8px; */
 }
 .PremiumPlan {
   font-family: "DM Serif Display", serif;
@@ -585,7 +586,7 @@ body {
   color: #ba4270;
   font-size: 20px;
   font-weight: 400;
-  margin-top: -6px;
+  /* margin-top: -6px; */
 }
 
 .underline1 {
@@ -958,31 +959,110 @@ footer form {
   flex-direction: column;
   align-items: center;
   margin: 39px 0;
+
 }
-@media screen and (min-width: 768px) {
-  /* Styles for tablets */
-  /* Add your CSS rules here */
+
+.responsive-box{
+  
+  display:none;
+  color: rgba(108, 130, 148, 1);
+  text-align: left;
+  margin-left: 165px;
+  font-size: 14px;
+  font-family: "Public Sans", sans-serif;
 }
+
+
 
 
 @media screen and (min-width: 1440px) {
   .Pricing {
     width: 546px;
     height: 56px;
-    top: 170px;
-    left: 165px;
+    margin-top: 90px;
+
     font-weight: 400;
     line-height: 56px;
-    font-size: 30px;
+    font-size: 40px;
   }
   .align {
     display: flex; /* This will make your plans align horizontally */
     flex-direction: row; /* This will stack them vertically */
     align-items: center; /* This will center them horizontally */
+    justify-content: left;
+  } 
+  .FreePlan,  .PremiumPlan {
+    margin-left: -18px;
+    width: auto;
+    font-size: 30px;
   }
-  .FreePlan, .BasicPlan, .PremiumPlan {
-    width: 600px;
+  
+  .BasicPlan{
+    font-size: 30px;
+   
   }
+  
+
+
+  .responsive-box {
+    display: block;
+  }
+  .cost{
+    font-size: 43px;
+    margin-left: 20px;
+    margin-top:-30px;
+
+  }
+  .checked{
+    font-size: 17px;
+    
+  }
+  .grayed-out{
+    font-size: 17px;
+  }
+
+  .header_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-left: 200px;
+    margin-top: -150px;
+    padding: 50px;
+    
+    
+  }
+  .underline1{
+    margin: 20px;
+    margin-bottom: 20px;
+  
+   
+  
+    
+  }
+
+  .footerTitle{
+    display: flex;
+     flex-direction: row;
+     height: 56px;
+     font-size: 48px;
+     padding: 40px;
+     margin-left: 115px;
+  }
+  .email{
+    width: 445px;
+    height: 48px;
+  }
+
+  .schedule-a-demo{
+    width: 173px;
+    height: 48px;
+    margin-bottom: 15px;
+   
+  }
+  .button{
+    width: 168px;
+    height:48px;
+  }
+
+
 }
-
-
