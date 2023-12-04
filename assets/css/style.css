@@ -521,6 +521,9 @@ footer form {
   transform: translateY(2px);
 }
 
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MANO>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 #figure {
   position: absolute;
   width: 295px;
@@ -604,7 +607,6 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-
   margin: 0 auto;
   align-items: center;
   vertical-align: center;
@@ -957,3 +959,30 @@ footer form {
   align-items: center;
   margin: 39px 0;
 }
+@media screen and (min-width: 768px) {
+  /* Styles for tablets */
+  /* Add your CSS rules here */
+}
+
+
+@media screen and (min-width: 1440px) {
+  .Pricing {
+    width: 546px;
+    height: 56px;
+    top: 170px;
+    left: 165px;
+    font-weight: 400;
+    line-height: 56px;
+    font-size: 30px;
+  }
+  .align {
+    display: flex; /* This will make your plans align horizontally */
+    flex-direction: row; /* This will stack them vertically */
+    align-items: center; /* This will center them horizontally */
+  }
+  .FreePlan, .BasicPlan, .PremiumPlan {
+    width: 600px;
+  }
+}
+
+
