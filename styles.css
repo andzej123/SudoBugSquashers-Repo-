@@ -56,7 +56,7 @@ body {
 .circle_partners_section {
   background-color: var(--CircleBlackBg);
   top: -600px;
-  left: -202px;
+  left: calc((100vw - 780px) / 2);
   z-index: 0;
 }
 
@@ -469,52 +469,6 @@ footer form {
 
 /*   >>>>>>>> Hover states <<<<<<<<<< */
 
-.pay_api_logo:hover,
-.footer_api_logo img:hover,
-.burger_button:hover,
-.burger_menu_x:hover {
-  transform: translateY(2px);
-  cursor: pointer;
-}
-
-.burger_menu_list a:hover,
-.footer_list a:hover {
-  opacity: 1;
-}
-
-.schedule-a-demo-burger:hover,
-.schedule-a-demo:hover {
-  cursor: pointer;
-  background-color: var(--CharmPink);
-}
-
-.header_form input:hover {
-  cursor: pointer;
-}
-
-.social_media a:hover {
-  cursor: pointer;
-}
-
-.ps_about_us button:hover {
-  color: var(--MirageBlue);
-  background-color: var(--LinkWaterWhite);
-  cursor: pointer;
-}
-
-.social_media img:hover {
-  filter: invert(33%) sepia(75%) saturate(701%) hue-rotate(290deg)
-    brightness(91%) contrast(88%);
-}
-
-.footer_list li:hover {
-  z-index: 2;
-}
-
-.footer_list a:hover {
-  z-index: 2;
-}
-
 /* >>>>>>>>>>> Active states <<<<<<<<<<<<< */
 
 .pay_api_logo:active,
@@ -547,3 +501,51 @@ footer form {
     left: -255px;
   }
 } */
+
+@media (hover: hover) {
+  .pay_api_logo:hover,
+  .footer_api_logo img:hover,
+  .burger_button:hover,
+  .burger_menu_x:hover {
+    transform: translateY(2px);
+    cursor: pointer;
+  }
+
+  .burger_menu_list a:hover,
+  .footer_list a:hover {
+    opacity: 1;
+  }
+
+  .schedule-a-demo-burger:hover,
+  .schedule-a-demo:hover {
+    cursor: pointer;
+    background-color: var(--CharmPink);
+  }
+
+  .header_form input:hover {
+    cursor: pointer;
+  }
+
+  .social_media a:hover {
+    cursor: pointer;
+  }
+
+  .ps_about_us button:hover {
+    color: var(--MirageBlue);
+    background-color: var(--LinkWaterWhite);
+    cursor: pointer;
+  }
+
+  .social_media img:hover {
+    filter: invert(33%) sepia(75%) saturate(701%) hue-rotate(290deg)
+      brightness(91%) contrast(88%);
+  }
+
+  .footer_list li:hover {
+    z-index: 2;
+  }
+
+  .footer_list a:hover {
+    z-index: 2;
+  }
+}
