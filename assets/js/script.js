@@ -27,9 +27,41 @@ addEventListener("scroll", () => {
 
 // <><><><><><><><><><> Circles <><><>><><><><><><><><><>><><><><><><><> //
 
-let wi = 780 + (window.innerWidth - 375) * 0.43;
+function calcCircle() {
+  let result = 0;
+  if (window.innerWidth <= 768) {
+    result = 780 + (window.innerWidth - 375) * 0.43;
+  } else {
+    result = 949 - (window.innerWidth - 768) * 0.251488;
+  }
+  return result;
+}
 
-let circlePosition = (window.innerWidth - wi) / 2;
+function calcLeft() {
+  let result = 0;
+  if (window.innerWidth <= 768) {
+    result = (window.innerWidth - calcCircle()) / 2;
+  } else {
+    result = -90 + (window.innerWidth - 768) * 1.3095238;
+  }
+  return result;
+}
+
+function calcTop() {
+  let result = 0;
+  if (window.innerWidth <= 768) {
+    result = -545 - (window.innerWidth - 375) * 0.2977099;
+  } else {
+    result = -662 + (window.innerWidth - 768) * 0.7291666666;
+  }
+  return result;
+}
+
+// let wi = 780 + (window.innerWidth - 375) * 0.43;
+let wi = calcCircle();
+// let circlePosition = (window.innerWidth - wi) / 2;
+let circlePosition = calcLeft();
+let circleTop = calcTop();
 let burgerLeft =
   (window.innerWidth - wi) / 2 - (window.innerWidth / 100) * 20.2;
 let burgerLeftBig = -255 - (window.innerWidth - 625) * 0.70422535;
@@ -38,6 +70,7 @@ circle.style.width = `${wi}px`;
 circle.style.height = `${wi}px`;
 circle.style.borderRadius = `${wi}px`;
 circle.style.left = `${circlePosition}px`;
+circle.style.top = `${circleTop}px`;
 burgerCircle.style.width = `${wi}px`;
 burgerCircle.style.height = `${wi}px`;
 burgerCircle.style.borderRadius = `${wi}px`;
@@ -51,8 +84,11 @@ if (window.innerWidth < 625) {
 window.addEventListener("resize", myFunction);
 
 function myFunction() {
-  let wi = 780 + (window.innerWidth - 375) * 0.43;
-  let circlePosition = (window.innerWidth - wi) / 2;
+  // let wi = 780 + (window.innerWidth - 375) * 0.43;
+  let wi = calcCircle();
+  // let circlePosition = (window.innerWidth - wi) / 2;
+  let circlePosition = calcLeft();
+  let circleTop = calcTop();
   let burgerLeft =
     (window.innerWidth - wi) / 2 - (window.innerWidth / 100) * 20.2;
 
@@ -62,6 +98,7 @@ function myFunction() {
   circle.style.height = `${wi}px`;
   circle.style.borderRadius = `${wi}px`;
   circle.style.left = `${circlePosition}px`;
+  circle.style.top = `${circleTop}px`;
   burgerCircle.style.width = `${wi}px`;
   burgerCircle.style.height = `${wi}px`;
   burgerCircle.style.borderRadius = `${wi}px`;

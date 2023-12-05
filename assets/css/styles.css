@@ -76,6 +76,11 @@ body {
     top: -148px;
     left: 385px;
   }
+
+  .circle_top {
+    /* left: 800px !important; */
+    /* top: -172px !important; */
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -88,7 +93,6 @@ body {
     top: -148px;
     left: 1055px;
   }
-
 }
 
 /*  <><><><>><><><<> Navbar tablet and desktop <><><><><><><><><> */
@@ -494,8 +498,6 @@ footer form {
   margin-top: 4px;
 }
 
-
-
 /* >>>>>>>>>>> Active states <<<<<<<<<<<<< */
 
 .pay_api_logo:active,
@@ -609,7 +611,7 @@ footer form {
   }
 
   .navbar_list a:nth-child(2) {
-    margin-right: 5px;
+    margin-right: 4px;
     margin-left: 1px;
   }
 
@@ -765,7 +767,9 @@ footer form {
   }
 
   .pricing_cards_first_col h3 {
+    margin-top: 30px;
     margin-bottom: 0;
+    margin-left: 1px;
   }
 
   .pricing_cards_second_col img {
@@ -774,12 +778,12 @@ footer form {
 
   .pricing_cards_second_col h3 {
     margin-top: 30px;
-    margin-left: 10px;
+    margin-left: 11px;
     margin-bottom: 0;
   }
 
   .pricing_cards_second_col p {
-    margin-left: 8px;
+    margin-left: 10px;
     padding: 0;
   }
 
@@ -788,8 +792,9 @@ footer form {
   }
 
   .pricing_cards_third_col h3 {
-    margin-left: 5px;
+    margin-left: 7px;
     margin-bottom: 0;
+    margin-top: 30px;
   }
 
   .pricing_cards_third_col p {
@@ -815,7 +820,7 @@ footer form {
     justify-content: space-between;
     align-items: center;
     padding: 30px 40px;
-    margin-top: 84px;
+    margin-top: 86px;
   }
 
   .footer_list {
@@ -843,7 +848,7 @@ footer form {
   }
 
   .navbar_list {
-    margin-left: 65px;
+    margin-left: 66px;
   }
 
   .schedule_a_demo_navar {
@@ -1028,6 +1033,7 @@ footer form {
   }
 
   .pricing_cards_third_col p {
+    margin-top: 16px;
     margin-left: 10px;
   }
 
@@ -1047,6 +1053,7 @@ footer form {
 
   .footer_black {
     justify-content: start;
+    margin-top: 83px;
   }
 
   .footer_api_logo {
