@@ -49,7 +49,7 @@ body {
 
 .circle_burger_menu {
   background-color: var(--CircleBlackBg);
-  top: -545px;
+  top: calc(-545px - (100vw - 375px) * 0.2977099);
   left: -282px;
 }
 
@@ -89,13 +89,6 @@ body {
     left: 1055px;
   }
 
-  .circle_top {
-    width: 780px !important;
-    height: 780px !important;
-    border-radius: 780px !important;
-    top: -172px !important;
-    left: 800px !important;
-  }
 }
 
 /*  <><><><>><><><<> Navbar tablet and desktop <><><><><><><><><> */
