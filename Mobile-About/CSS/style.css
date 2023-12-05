@@ -247,7 +247,7 @@ body nav {
 .burger_menu {
   position: fixed;
   top: 0;
-  right: 894px;
+  left: 57px;
   background-color: var(--MirageBlue);
   width: 80%;
   max-width: 270px;
