@@ -42,7 +42,7 @@ body {
 
 .circle_top {
   background-color: var(--CircleColor);
-  top: -545px;
+  top: calc(-545px - (100vw - 375px) * 0.2977099);
   left: -202px;
   z-index: -1;
 }
@@ -65,6 +65,43 @@ body {
   top: 176px;
   left: -202px;
   z-index: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .circle_partners_section {
+    top: -547px;
+  }
+
+  .circle_footer {
+    top: -148px;
+    left: 385px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .circle_partners_section {
+    top: -359px;
+    left: -235px;
+  }
+
+  .circle_footer {
+    top: -148px;
+    left: 1055px;
+  }
+
+  .circle_top {
+    width: 780px !important;
+    height: 780px !important;
+    border-radius: 780px !important;
+    top: -172px !important;
+    left: 800px !important;
+  }
+}
+
+/*  <><><><>><><><<> Navbar tablet and desktop <><><><><><><><><> */
+
+.navbar_tablet {
+  display: none;
 }
 
 /* <><><><><><><>   Burger Menu  <><><><><><><><><> */
@@ -269,26 +306,28 @@ header span {
 .ps_logos_section {
   position: relative;
   z-index: 5;
-  margin: 0 24px;
-}
-
-.ps_logos_section div {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 35px;
+  justify-items: center;
   align-items: center;
 }
 
-.ps_logos_section div:nth-child(1) {
-  gap: 50px;
-}
-
 .ps_logos_section div:nth-child(2) {
-  margin: 39px 0;
-  gap: 57px;
+  margin-right: 10px;
 }
 
 .ps_logos_section div:nth-child(3) {
-  gap: 72px;
+  margin-left: 2px;
+  margin-bottom: 3px;
+}
+
+.ps_logos_section div:nth-child(5) {
+  margin-right: 14px;
+}
+
+.ps_logos_section div:nth-child(6) {
+  margin-right: 17px;
 }
 
 .partners_section h2 {
@@ -298,7 +337,7 @@ header span {
   font-size: 32px;
   line-height: 36px;
   letter-spacing: -0.246px;
-  margin: 56px 11px 17px 11px;
+  margin: 53px 11px 15px 11px;
   letter-spacing: 0.1px;
   word-spacing: -1px;
 }
@@ -386,20 +425,15 @@ header span {
   line-height: 25px;
   letter-spacing: -0.138px;
   margin-top: 31px;
-  margin-bottom: 14px;
+  margin-bottom: 17px;
   word-spacing: 1.5px;
-}
-
-.pricing_cards_section h3:nth-child(5),
-.pricing_cards_section h3:nth-child(8) {
-  margin-top: 29px;
 }
 
 .pricing_cards_section p {
   color: var(--LightSanJuanBlue);
   text-align: center;
   line-height: 25px;
-  margin-bottom: 49px;
+  margin-bottom: 45px;
   padding: 0px 5px;
   letter-spacing: -0.115px;
 }
@@ -446,7 +480,7 @@ footer h2 {
   line-height: 36px;
   letter-spacing: -0.246px;
   margin-top: 80px;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 footer form {
@@ -483,24 +517,10 @@ footer form {
 .schedule-a-demo:active,
 .ps_about_us button:active,
 .social_media a:active,
-.footer_list li:active {
+.footer_list li:active,
+.schedule_a_demo_navar:active {
   transform: translateY(2px);
 }
-
-/* .circle_top {
-  left: calc((100vw - 780px) / 2);
-}
-
-.circle_burger_menu {
-  left: calc((100vw - 780px) / 2 - 20.2vw);
-}
-
-@media only screen and (min-width: 625px) {
-  .circle_burger_menu {
-    left: calc((-255px - ((100vw - 625px)) * 0.7042253521126761));
-    left: -255px;
-  }
-} */
 
 @media (hover: hover) {
   .pay_api_logo:hover,
@@ -517,7 +537,8 @@ footer form {
   }
 
   .schedule-a-demo-burger:hover,
-  .schedule-a-demo:hover {
+  .schedule-a-demo:hover,
+  .schedule_a_demo_navar:hover {
     cursor: pointer;
     background-color: var(--CharmPink);
   }
@@ -547,5 +568,500 @@ footer form {
 
   .footer_list a:hover {
     z-index: 2;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Tablet 768px <<<<<<<<<<<<<<< */
+
+@media only screen and (min-width: 768px) {
+  .burger_menu_logos {
+    display: none;
+  }
+
+  .burger_menu {
+    display: none;
+  }
+
+  .pay_api_logo_tablet {
+    margin-top: 3px;
+  }
+
+  .navbar_tablet {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 40px 0 40px;
+  }
+
+  .navbar_tablet div:nth-child(2) {
+    display: flex;
+    gap: 40px;
+  }
+
+  .navbar_list {
+    margin-top: 3px;
+    margin-right: 22px;
+  }
+
+  .navbar_list a {
+    color: var(--SanJuanBlue);
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    opacity: 0.7;
+  }
+
+  .navbar_list a:nth-child(2) {
+    margin-right: 5px;
+    margin-left: 1px;
+  }
+
+  .schedule_a_demo_navar {
+    width: 173px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: var(--DarkPink);
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    color: var(--LinkWaterWhite);
+    font-family: "Public Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.115px;
+    border: none;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .header_phone {
+    margin-top: 50px;
+  }
+
+  .header_phone img {
+    height: 299.317px;
+  }
+
+  header h1 {
+    margin: 46px 98px 0 98px;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.369px;
+  }
+
+  .header_form {
+    display: inline-block;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 0;
+    margin-right: 117px;
+  }
+
+  .header_form button {
+    width: 173px;
+    position: absolute;
+    left: 272px;
+  }
+
+  header p {
+    margin-top: 0;
+    margin-bottom: 99px;
+  }
+
+  header span {
+    letter-spacing: 0.2px;
+  }
+
+  .ps_logos_section {
+    grid-template-columns: max-content max-content max-content;
+    justify-content: center;
+    align-items: center;
+    margin: 9px 98px 0 98px;
+  }
+
+  .ps_logos_section div:nth-child(1) img {
+    width: 129px;
+  }
+  .ps_logos_section div:nth-child(2) img {
+    width: 145px;
+  }
+  .ps_logos_section div:nth-child(3) img {
+    width: 140px;
+  }
+  .ps_logos_section div:nth-child(4) img {
+    width: 131px;
+  }
+  .ps_logos_section div:nth-child(5) img {
+    width: 96px;
+  }
+  .ps_logos_section div:nth-child(6) img {
+    width: 137px;
+  }
+
+  .ps_logos_section div:nth-child(2) {
+    margin-left: 59px;
+    margin-right: 60px;
+  }
+  .ps_logos_section div:nth-child(5) {
+    margin: 0;
+  }
+  .ps_logos_section div:nth-child(6) {
+    margin: 0;
+    margin-left: 5px;
+    margin-top: 3px;
+  }
+
+  .partners_section h2 {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369px;
+    margin-top: 61px;
+    margin-bottom: 25px;
+  }
+
+  .partners_section p {
+    margin: 0 137px 0 135px;
+  }
+
+  .ps_about_us {
+    margin-top: 31px;
+    margin-bottom: 8px;
+  }
+
+  .api_logo img {
+    width: 393px;
+    margin-top: 20px;
+  }
+
+  .api_section h2 {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369px;
+  }
+
+  .api_section p {
+    margin: 0 79px;
+    margin-top: 25px;
+  }
+
+  .dual_phones {
+    margin-top: 98px;
+  }
+
+  .dual_phones img {
+    width: 168px;
+  }
+
+  .api_section p {
+    margin-top: 24px;
+    margin-bottom: 99px;
+  }
+
+  .pricing_cards_section {
+    display: flex;
+    padding: 0 32px;
+  }
+
+  .pricing_cards_section img {
+    width: 88px;
+  }
+
+  .pricing_cards_first_col h3 {
+    margin-bottom: 0;
+  }
+
+  .pricing_cards_second_col img {
+    margin-left: 10px;
+  }
+
+  .pricing_cards_second_col h3 {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+
+  .pricing_cards_second_col p {
+    margin-left: 8px;
+    padding: 0;
+  }
+
+  .pricing_cards_third_col img {
+    margin-left: 10px;
+  }
+
+  .pricing_cards_third_col h3 {
+    margin-left: 5px;
+    margin-bottom: 0;
+  }
+
+  .pricing_cards_third_col p {
+    padding: 0 8px;
+    margin-left: 7px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer h2 {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 400;
+    letter-spacing: -0.369px;
+    margin-top: 55px;
+    margin-bottom: 8px;
+  }
+
+  .footer_black {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    margin-top: 84px;
+  }
+
+  .footer_list {
+    flex-direction: row;
+    margin: 0;
+    margin-right: 78px;
+    justify-items: end;
+  }
+
+  .footer_list li:nth-child(2) {
+    margin: 0 41px;
+  }
+
+  .social_media {
+    margin-bottom: 5px;
+  }
+}
+
+/* <<<<<<<<<< Desktop >>>>>>>>>>>>>>>>>> */
+
+@media only screen and (min-width: 1440px) {
+  .navbar_tablet {
+    margin: 40px 163px;
+    justify-content: start;
+  }
+
+  .navbar_list {
+    margin-left: 65px;
+  }
+
+  .schedule_a_demo_navar {
+    margin-left: 485px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    margin-top: 72px;
+    gap: 110px;
+  }
+
+  .header_phone {
+    margin: 0;
+    margin-top: 2px;
+    margin-left: 97px;
+  }
+
+  .header_phone img {
+    height: 502px;
+  }
+
+  .header_text {
+    margin-top: 80px;
+    margin-left: 162px;
+    margin-bottom: 53px;
+  }
+
+  .header_text h1 {
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -0.554px;
+    margin: 0;
+    width: 546px;
+    text-align: start;
+  }
+
+  .header_text .header_form {
+    margin-top: 48px;
+    margin-right: 212px;
+  }
+
+  .header_text p {
+    padding-right: 260px;
+  }
+
+  .partners_section {
+    padding: 0;
+  }
+
+  .partners_section_inner {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .partners_section_text {
+    margin-top: 40px;
+    width: 707px;
+    margin-right: 31px;
+  }
+
+  .partners_section_text h2 {
+    position: relative;
+    font-weight: 400;
+    margin-left: 23px;
+    word-spacing: 0.5px;
+    z-index: 2;
+    margin-bottom: 24px;
+  }
+
+  .partners_section_text p {
+    text-align: start;
+    margin: 0 100px;
+    margin-left: 165px;
+  }
+
+  .ps_about_us {
+    text-align: start;
+    margin-left: 165px;
+    margin-bottom: 100px;
+  }
+
+  .ps_logos_section {
+    align-content: center;
+    margin: 0;
+    margin-right: 164px;
+    margin-top: 4px;
+  }
+
+  .api_logo img {
+    width: 445px;
+  }
+
+  .api_logo_text h2 {
+    text-align: left;
+    margin-left: 126px;
+    margin-top: 129px;
+  }
+
+  .api_logo_text p {
+    width: 445px;
+    margin-left: 127px;
+    text-align: start;
+  }
+
+  .api_logo_outer {
+    display: flex;
+  }
+
+  .api_logo {
+    margin-left: 145px;
+    margin-top: 49px;
+  }
+
+  .dual_phones_outer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .dual_phones {
+    margin-top: 110px;
+    margin-right: 152px;
+    gap: 40px;
+  }
+
+  .api_section h2 {
+    font-weight: 400;
+  }
+
+  .dual_phones img {
+    width: 262px;
+  }
+
+  .phones_section_text {
+    margin-top: 249px;
+  }
+
+  .phones_section_text h2 {
+    text-align: start;
+    margin-left: 147px;
+  }
+
+  .phones_section_text p {
+    text-align: start;
+    margin-left: 147px;
+    margin-top: 0;
+  }
+
+  .pricing_cards_section {
+    padding: 0;
+    margin-top: 97px;
+    display: grid;
+    grid-template-columns: 365px 365px 365px;
+    justify-content: center;
+    column-gap: 8px;
+  }
+
+  .pricing_cards_section img {
+    width: 106px;
+  }
+
+  .pricing_cards_first_col {
+    margin-right: 15px;
+  }
+
+  .pricing_cards_first_col div {
+    margin-right: 10px;
+  }
+  .pricing_cards_second_col {
+    margin-right: 13px;
+  }
+
+  .pricing_cards_second_col p {
+    margin-left: 12px;
+  }
+
+  .pricing_cards_third_col h3 {
+    margin-left: 14px;
+  }
+
+  .pricing_cards_third_col p {
+    margin-left: 10px;
+  }
+
+  .footer_form {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 185px;
+  }
+
+  .footer_form h2 {
+    margin-top: 50px;
+  }
+
+  .footer_form .header_form {
+    margin-top: 56px;
+  }
+
+  .footer_black {
+    justify-content: start;
+  }
+
+  .footer_api_logo {
+    margin-left: 123px;
+  }
+
+  .footer_list {
+    margin-left: 66px;
+  }
+
+  .social_media {
+    margin-left: 483px;
   }
 }

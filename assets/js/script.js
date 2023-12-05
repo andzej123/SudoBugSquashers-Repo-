@@ -28,6 +28,7 @@ addEventListener("scroll", () => {
 // <><><><><><><><><><> Circles <><><>><><><><><><><><><>><><><><><><><> //
 
 let wi = 780 + (window.innerWidth - 375) * 0.43;
+
 let circlePosition = (window.innerWidth - wi) / 2;
 let burgerLeft =
   (window.innerWidth - wi) / 2 - (window.innerWidth / 100) * 20.2;
