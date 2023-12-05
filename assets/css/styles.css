@@ -501,14 +501,15 @@ footer form {
   margin-top: 4px;
 }
 
-/*   >>>>>>>> Hover states <<<<<<<<<< */
+
 
 /* >>>>>>>>>>> Active states <<<<<<<<<<<<< */
 
 .pay_api_logo:active,
 .footer_api_logo img:active,
 .burger_button:active,
-.burger_menu_x:active {
+.burger_menu_x:active,
+.pay_api_logo_tablet:active {
   transform: translateY(4px);
 }
 
@@ -526,13 +527,15 @@ footer form {
   .pay_api_logo:hover,
   .footer_api_logo img:hover,
   .burger_button:hover,
-  .burger_menu_x:hover {
+  .burger_menu_x:hover,
+  .pay_api_logo_tablet:hover {
     transform: translateY(2px);
     cursor: pointer;
   }
 
   .burger_menu_list a:hover,
-  .footer_list a:hover {
+  .footer_list a:hover,
+  .navbar_list a:hover {
     opacity: 1;
   }
 
