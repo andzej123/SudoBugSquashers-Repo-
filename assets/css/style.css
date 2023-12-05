@@ -638,8 +638,9 @@ body {
 }
 
 .footerTitle{
-
-    transform: translateY(-25px);
+  position: relative;
+  top: -20px;
+  right: 8px;
 }
 .email{
   margin-left: -10px;
@@ -902,6 +903,23 @@ li::before {
   font-weight: 700;
   letter-spacing: -0.115px;
 }
+.schedule-a-demo-pricing{
+background-color: var(--dark-pink);
+border: none;
+width: 252px;
+height: 48px;
+border-radius: 24px;
+box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+color: #fbfcfe;
+text-align: center;
+font-weight: 700;
+letter-spacing: -0.115px;
+
+}
+.schedule-a-demo-pricing:hover {
+  background-color: var(--charm-pink);
+  cursor: pointer;
+}
 
 .footer_black {
   background-color: var(--mirage-blue);
@@ -1042,6 +1060,8 @@ footer form {
 }
 
   .underline1{
+    position: relative;
+    top: -15px;
     width:85% ;
     margin-left: 65px;
     
@@ -1049,6 +1069,8 @@ footer form {
     
   }
   .underline2{
+    position: relative;
+    top: -8px;
     width: 85%;
     margin-left: 65px;
     margin-top: -15px;
@@ -1056,6 +1078,8 @@ footer form {
   
   }
   .underline3{
+        position: relative;
+    top: -8px;
   width: 85%;
   margin-left: 40px;
   margin-top: 8px;
@@ -1087,8 +1111,7 @@ footer form {
     position: relative;
     z-index:1 ;
     top: 40px;
-    right: 25px;
-
+    right: 20px;
     width: 546px;
     height: 56px;
     font-weight: 400;
@@ -1110,6 +1133,8 @@ footer form {
     display: block;
   }
   #cost1{
+    position: relative;
+    top: -10px;
     font-size: 43px;
     margin-left: -145px;
     margin-top: -30px;
@@ -1118,13 +1143,17 @@ footer form {
   }
 
   #cost2{
+    position: relative;
+    top: 9px;
     font-size: 43px;
-    margin-left: -140px;
-    margin-top:-30px;
+    margin-left: -130px;
+    margin-top:-45px;
     font-size: 40px
   }
 
   #cost3{
+    position: relative;
+    top: -10px;
     font-size: 43px;
     margin-left: -145px;
     margin-top: -25px;
@@ -1183,7 +1212,7 @@ footer form {
   }
 
  
-  .email{
+  .email-pricing{
     width: 445px;
     height: 48px;
     margin-right: -45px;
@@ -1191,7 +1220,7 @@ footer form {
     z-index: 0;
   }
 
-  .schedule-a-demo{
+  .schedule-a-demo-pricing{
     width: 173px;
     height: 48px;
     margin-top: -136px;
@@ -1224,16 +1253,16 @@ footer form {
   #box1{
    position: relative;
    right: 15px;
-   bottom: 8px;
+   top: -20px;
   }
   #box2{
     position: relative;
     right: 45px;
-    bottom: 8px;
+    top:  -15px;
    }
    #box3{
     position: relative;
     right: 70px;
-    bottom: 10px;
+    top: -20px;
    }
 }
