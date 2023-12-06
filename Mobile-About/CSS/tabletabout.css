@@ -1,64 +1,261 @@
-body{
-    text-align: center;
-}
-.div1{
-    width:549px;
-    height:178px;
+@import "global.css";
+
+.div1 {
+    width: 550px;
+    height: 178px;
     font-family: "DM Serif Display";
     font-weight: normal;
     font-size: 48px;
     line-height: 56px;
     text-align: center;
+    padding-left: 110px;
+    padding-right: 98px;
+    margin-bottom: 55px;
+    margin-top: 75px;
+
 }
-.div2{
+
+.div2 {
     display: flex;
     flex-direction: row;
 }
-.div2 p{
-    width:456px;
+
+.div2 p {
+    width: 456px;
     font-family: "Public Sans";
     font-size: 15px;
     line-height: 28px;
+    font-weight: 400;
+    padding-right: 40px;
+    margin-top: 0px;
+    margin-left: 32px;
 }
-.div3{
+
+.div2 h2 {
+    padding-left: 39px;
+    font-family: "DM Serif Display";
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 0px;
+}
+
+.div3 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 110px;
+}
+
+.div3 p {
+    width: 456px;
+    font-family: "Public Sans";
+    font-size: 15px;
+    line-height: 28px;
+    padding-right: 40px;
+    font-weight: 400;
+    padding-right: 40px;
+
+}
+
+.div3 h2 {
+    padding-left: 39px;
+    font-family: "DM Serif Display";
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 50px;
+}
+
+.div5 {
     display: flex;
     flex-direction: row;
 }
-.div3 p{
-    width:456px;
+
+.div5 p {
+    width: 456px;
     font-family: "Public Sans";
     font-size: 15px;
     line-height: 28px;
+    padding-right: 40px;
+    font-weight: 400;
+    padding-right: 40px;
+    margin-top: 62px;
 }
-.div5{
+
+.div5 h2 {
+    padding-left: 39px;
+    font-family: "DM Serif Display";
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 163px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.div6 {
     display: flex;
     flex-direction: row;
 }
-.div5 p{
-    width:456px;
+
+.div6 p {
+    width: 456px;
     font-family: "Public Sans";
     font-size: 15px;
     line-height: 28px;
+    padding-right: 40px;
+    font-weight: 400;
+    padding-right: 40px;
+    margin-top: 0px;
 }
-.div6{
-    display: flex;
-    flex-direction: row;
+
+.div6 h2 {
+    padding-left: 39px;
+    font-family: "DM Serif Display";
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 1px;
 }
-.div6 p{
-    width:456px;
-    font-family: "Public Sans";
-    font-size: 15px;
-    line-height: 28px;
-}
-.image{
+
+.image {
     display: none;
 }
-.image2{
+
+.image2 {
     display: block;
 }
-.div4{
+
+.div4 {
     display: flex;
     flex-direction: row;
-    border-style: dashed;
+}
+
+.team_members {
+    margin-left: -26px;
+}
+
+.offices_in_us {
+    margin-left: 29px;
+}
+
+.Transactions {
+    margin-left: 96px;
+}
+
+.burger_menu_logos {
+    display: none;
+}
+
+.burger_menu {
+    display: none;
+}
+
+
+.pay_api_logo_tablet {
+    margin-top: 3px;
+}
+
+.navbar_tablet {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 40px 0 40px;
+}
+
+.navbar_tablet div:nth-child(2) {
+    display: flex;
+    gap: 40px;
+}
+
+.navbar_list {
+    margin-top: 1px;
+    margin-right: 69px;
+}
+
+.navbar_list a {
+    color: var(--SanJuanBlue);
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.navbar_list a:nth-child(2) {
+    margin-right: 4px;
+    margin-left: 1px;
+}
+
+.schedule_a_demo_navar {
+    width: 173px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: var(--DarkPink);
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    color: var(--LinkWaterWhite);
+    font-family: "Public Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.115px;
+    border: none;
     
+    
+}
+.schedule_a_demo_navar:hover{
+    cursor: pointer;
+    background-color: var(--CharmPink);
+}
+
+footer {
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 400;
+    letter-spacing: -0.369px;
+    margin-top: 55px;
+    margin-bottom: 8px;
+}
+
+.footer_black {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    margin-top: 86px;
+}
+
+.footer_list {
+    flex-direction: row;
+    margin: 0;
+    margin-right: 78px;
+    justify-items: end;
+}
+
+.footer_list li:nth-child(2) {
+    margin: 0 41px;
+}
+
+.social_media {
+    margin-bottom: 5px;
+}
+
+.Button_Tablet {
+    display: block;
+    margin-top: 0px;
+    margin-right: -689px;
+}
+
+.pay_api_logo_tablet {
+    margin-top: 5px;
+    margin-left: 0px;
+    display: block;
+    margin-right: 50px;
+}
+
+.schedule-a-demo-outer-burger {
+    display: none;
 }
