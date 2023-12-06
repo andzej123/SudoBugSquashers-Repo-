@@ -20,34 +20,29 @@ const form = document.getElementById('form');
 const elements = [[email, emailContainer], [title, titleContainer], [message, messageContainer]];
 
 form.addEventListener('submit', (e) => {
-    let hasErrors = false; 
+    let hasErrors = false;
 
-    if (title.value == '' || title.value == null) {
-        titleContainer.classList.add('not-empty');
+    
+    const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (email.value == '' || email.value == null || !emailRegex.test(email.value.trim())) {
+        emailContainer.classList.add('not-empty', 'invalid');
         hasErrors = true;
     }
 
-    if (message.value == '' || message.value == null) {
-        messageContainer.classList.add('not-empty');
-        hasErrors = true;
-    }
-
-    // Check email validation only if it's not empty
-    if (email.value != '' && email.value != null) {
-        const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-        if (!emailRegex.test(email.value.trim())) {
-            emailContainer.classList.add('invalid');
+   
+    elements.slice(1).forEach(([element, container]) => {
+        if (element.value == '' || element.value == null) {
+            container.classList.add('not-empty');
             hasErrors = true;
         }
-    }
+    });
 
     if (hasErrors) {
-        e.preventDefault(); 
-        return false; 
+        e.preventDefault();
+        return false;
     } else {
         console.log('Form submitted successfully');
-        return true; 
+        return true;
     }
 });
 
