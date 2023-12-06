@@ -93,6 +93,9 @@ body nav {
     height:300px;
     width: 449px;
 }
+.image2{
+    display: none;
+}
 .div6{
     margin-bottom: 48px;
 }
@@ -100,15 +103,13 @@ body nav {
 /*   >>>>>>>> Hover states <<<<<<<<<< */
 
 .pay_api_logo:hover,
-.footer_api_logo img:hover,
 .burger_button:hover,
 .burger_menu_x:hover {
     transform: translateY(2px);
     cursor: pointer;
 }
 
-.burger_menu_list a:hover,
-.footer_list a:hover {
+.burger_menu_list a:hover{
     opacity: 1;
 }
 
@@ -155,7 +156,7 @@ body nav {
 /* >>>>>>>>>>> Active states <<<<<<<<<<<<< */
 
 .pay_api_logo:active,
-.footer_api_logo img:active,
+
 .burger_button:active,
 .burger_menu_x:active {
     transform: translateY(4px);
@@ -165,8 +166,7 @@ body nav {
 .schedule-a-demo-burger:active,
 .schedule-a-demo:active,
 .ps_about_us button:active,
-.social_media a:active,
-.footer_list li:active {
+.social_media a:active {
     transform: translateY(2px);
 }
 
@@ -395,7 +395,7 @@ body nav {
     margin-bottom: 16px;
   }
   
-  .footer_form input::placeholder {
+  .email {
     color: var(--SanJuanBlue);
     opacity: 0.5;
   }
@@ -525,4 +525,13 @@ body nav {
   .social_media a:active,
   .footer_list li:active {
     transform: translateY(2px);
+  }
+  .pay_api_logo_tablet{
+    display: none;
+  }
+  .navbar_list{
+    display:none;
+  }
+  .Button_Tablet{
+    display:none;
   }
