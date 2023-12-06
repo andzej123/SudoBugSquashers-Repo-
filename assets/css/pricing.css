@@ -860,45 +860,6 @@ li::before {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .responsive-box{
   
   display:none;
@@ -908,7 +869,7 @@ li::before {
   font-size: 14px;
   font-family: "Public Sans", sans-serif;
 }
-
+/* DESKTOP>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media screen and (min-width: 1440px) {
 
 
@@ -1234,4 +1195,80 @@ li::before {
    
 }
 
+/* DESKTOP>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TABLET>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* 
+.responsive-box{
+  
+  display:none;
+  color: rgba(108, 130, 148, 1);
+  margin-left: 80px;
+  text-align: left;
+  font-size: 14px;
+  font-family: "Public Sans", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  #box1{
+    position: relative;
+    right: 13px;
+    top: -90px;
+   }
+   #box2{
+     position: relative;
+     right: 32px;
+     top:  -95px;
+    }
+    #box3{
+     position: relative;
+     right: 45px;
+     top: -90px;
+    }
+} */
+
+.text-box {
+  width: 100%; /* Make the boxes take up the full width of the container by default */
+}
+
+@media screen and (min-width: 768px) {
+  .text-box {
+    width: calc((100% - 2 * 20px) / 3); /* Make the boxes take up one third of the container's width, minus 20px for margins */
+    margin: 10px; /* Add some margin around the boxes */
+  }
+
+  .align {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: left;
+    margin: 100px;
+  } 
+
+
+}
