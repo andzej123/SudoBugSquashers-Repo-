@@ -386,6 +386,7 @@ header span {
   position: relative;
   padding: 0 18px;
   margin-top: 80px;
+  overflow: hidden;
 }
 
 .api_logo {
@@ -411,7 +412,7 @@ header span {
 }
 
 .api_section img {
-  filter: drop-shadow(25px 25px 80px rgba(54, 83, 107, 0.3));
+  filter: drop-shadow(25px 25px 65px rgba(54, 83, 107, 0.3));
 }
 
 .dual_phones {
