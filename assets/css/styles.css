@@ -63,9 +63,12 @@ body {
 }
 
 .circle_api {
+  width: calc(780px + (100vw - 1440px) * 0.5);
+  height: calc(780px + (100vw - 1440px) * 0.5);
+  border-radius: calc(780px + (100vw - 1440px) * 0.5);
   background-color: var(--CircleColor);
-  top: 365px;
-  right: -390px;
+  top: calc(445px - (100vw - 1440px) * 0.7);
+  right: calc(-390px + (100vw - 1440px) * 3.1);
   z-index: -1;
   display: none;
 }
@@ -73,7 +76,7 @@ body {
 .circle_footer {
   background-color: var(--CircleBlackBg);
   top: calc(176px - (100vw - 375px) * 0.8244274809160305);
-  left: calc(-202px +  (100vw - 375px) * 1.493638676844784);
+  left: calc(-202px + (100vw - 375px) * 1.493638676844784);
   z-index: 0;
 }
 
@@ -87,7 +90,6 @@ body {
     top: -148px;
     left: calc(385px + (100vw - 768px) * 0.9970238095238095);
   }
-
 }
 
 @media only screen and (min-width: 1440px) {
@@ -740,6 +742,14 @@ footer form {
   .api_logo img {
     width: 393px;
     margin-top: 20px;
+  }
+
+  .api_section {
+    margin-top: 0;
+  }
+
+  .api_logo_outer {
+    margin-top: 80px;
   }
 
   .api_section h2 {
