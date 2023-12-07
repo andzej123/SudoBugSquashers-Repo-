@@ -1,5 +1,10 @@
 @import "global.css";
 
+body{
+    display: flex;
+    flex-direction: column;
+    flex-grow:1;
+}
 .div1 {
     width: 550px;
     height: 178px;
@@ -29,6 +34,7 @@
     padding-right: 40px;
     margin-top: 0px;
     margin-left: 32px;
+    text-align: start;
 }
 
 .div2 h2 {
@@ -43,7 +49,7 @@
 .div3 {
     display: flex;
     flex-direction: row;
-    margin-bottom: 110px;
+    margin-bottom: 105px;
 }
 
 .div3 p {
@@ -54,6 +60,9 @@
     padding-right: 40px;
     font-weight: 400;
     padding-right: 40px;
+    text-align: start;
+    margin-top: 46px;
+    margin-bottom: -18px;
 
 }
 
@@ -69,6 +78,8 @@
 .div5 {
     display: flex;
     flex-direction: row;
+    margin-bottom: -36px;
+    margin-top: -10px;
 }
 
 .div5 p {
@@ -79,7 +90,8 @@
     padding-right: 40px;
     font-weight: 400;
     padding-right: 40px;
-    margin-top: 62px;
+    margin-top: 20px;
+    text-align: start;
 }
 
 .div5 h2 {
@@ -96,6 +108,7 @@
 .div6 {
     display: flex;
     flex-direction: row;
+    margin-bottom: 50px;
 }
 
 .div6 p {
@@ -105,8 +118,9 @@
     line-height: 28px;
     padding-right: 40px;
     font-weight: 400;
-    padding-right: 40px;
     margin-top: 0px;
+    text-align: start;
+
 }
 
 .div6 h2 {
@@ -116,6 +130,7 @@
     font-size: 32px;
     line-height: 40px;
     margin-top: 1px;
+    margin-right: 17px;
 }
 
 .image {
@@ -124,6 +139,7 @@
 
 .image2 {
     display: block;
+    margin-bottom: 60px;
 }
 
 .div4 {
@@ -199,16 +215,18 @@
     font-weight: 700;
     letter-spacing: -0.115px;
     border: none;
-    
-    
+
+
 }
-.schedule_a_demo_navar:hover{
+
+.schedule_a_demo_navar:hover {
     cursor: pointer;
     background-color: var(--CharmPink);
 }
 
 footer {
     text-align: center;
+    
 }
 
 footer h2 {
@@ -217,7 +235,7 @@ footer h2 {
     font-weight: 400;
     letter-spacing: -0.369px;
     margin-top: 55px;
-    margin-bottom: 8px;
+    margin-bottom: 8;
 }
 
 .footer_black {
@@ -225,7 +243,9 @@ footer h2 {
     justify-content: space-between;
     align-items: center;
     padding: 30px 40px;
-    margin-top: 86px;
+    margin-top: 88px;
+    height: 40px;
+
 }
 
 .footer_list {
@@ -258,4 +278,76 @@ footer h2 {
 
 .schedule-a-demo-outer-burger {
     display: none;
+}
+
+.footer_form {
+    margin-bottom: 11px;
+
+}
+
+.footer_form button {
+    width: 173px;
+    height: 48px;
+    margin-top: -65px;
+    margin-left: 270px;
+}
+
+.footer_form input {
+    width: 390px;
+    height: 44px;
+    margin-top: -10px;
+
+}
+
+.footer_form h2 {
+    margin-top: 5px;
+    margin-bottom: 36px;
+}
+
+.circle_outer_top {
+    position: absolute;
+    top: -470px;
+}
+
+.team_members {
+    border-top: 1px solid rgba(54, 83, 107, 0.25);
+    border-bottom: 1px solid rgba(54, 83, 107, 0.25);
+    width: 240px;
+
+}
+
+.offices_in_us {
+    border-top: 1px solid rgba(54, 83, 107, 0.25);
+    border-bottom: 1px solid rgba(54, 83, 107, 0.25);
+    width: 240px;
+
+}
+
+.Transactions {
+    border-top: 1px solid rgba(54, 83, 107, 0.25);
+    border-bottom: 1px solid rgba(54, 83, 107, 0.25);
+    width: 263px;
+
+}
+
+.div4 {
+    border: none;
+
+}
+
+.circle_footer {
+    width: 780px;
+    height: 780px;
+    border-radius: 780px;
+    position: absolute;
+    top: -100px;
+    left: 355px;
+    
+}
+
+.circle_footer {
+    width: 780px;
+    height: 780px;
+    border-radius: 780px;
+    position: absolute;
 }
