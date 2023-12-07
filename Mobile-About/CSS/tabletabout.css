@@ -16,7 +16,7 @@ body{
     padding-left: 110px;
     padding-right: 98px;
     margin-bottom: 55px;
-    margin-top: 75px;
+    margin-top: 30px;
 
 }
 
@@ -49,7 +49,7 @@ body{
 .div3 {
     display: flex;
     flex-direction: row;
-    margin-bottom: 105px;
+    margin-bottom: 102px;
 }
 
 .div3 p {
@@ -78,7 +78,7 @@ body{
 .div5 {
     display: flex;
     flex-direction: row;
-    margin-bottom: -36px;
+    margin-bottom: -33px;
     margin-top: -10px;
 }
 
@@ -145,6 +145,7 @@ body{
 .div4 {
     display: flex;
     flex-direction: row;
+    margin-bottom: -4px;
 }
 
 .team_members {
