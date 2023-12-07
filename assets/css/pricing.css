@@ -549,9 +549,153 @@ footer form {
     .burger_menu_logos img {
         display: block ;
     }
-}
-/* Mobile----------------------------------------------*/
+    .Pricing{
+      position: relative;
+      top: 30px;
+    }
 
+    .FreePlan{
+      /* position: relative;
+      top: 50px; */
+      margin-top: 75px;
+    }
+    .BasicPlan{
+      position: relative;
+      top: 5px;
+    }
+    .PremiumPlan{
+      position: relative;
+      top: 5px;
+    }
+    #cost1{
+      position: relative;
+      top: -5px;
+    }
+    #cost2{
+      position: relative;
+      top: -5px;
+    }
+    #cost3{
+      position: relative;
+      top: -5px;
+    }
+
+    .underline1{
+      position: relative;
+      top: -5px;
+    }
+    .underline2{
+      position: relative;
+      top: -2px;
+    }
+    .underline3{
+     position: relative;
+     top: -6px;
+    }
+    .underline4{
+      position: relative;
+      top: -5px;
+    }
+    .underline5{
+      position: relative;
+      top: -5px;
+    }
+    .underline6{
+      position: relative;
+      top: -10px;
+    }
+    .checked1{
+      font-family: "Public Sans", sans-serif;
+      font-size: 16px;
+      position: relative;
+      margin-left: 5px;
+    }
+    .checked2{
+      font-family: "Public Sans", sans-serif;
+      font-size: 16px;
+      position: relative;
+      top: -2px;
+      
+    }
+    .checked3{
+      font-family: "Public Sans", sans-serif;
+      font-size: 16px;
+      position: relative;
+      top: -2px;
+      margin-left: 3px;
+    }
+
+    .grayed-out{
+      position: relative;
+      top: 5px;
+      margin: -5px;
+      
+    }
+
+    #button1{
+      position: relative;
+      top: 8px;
+    }
+    #button2{
+      position: relative;
+      top: 4px;
+    }
+
+    .titlefooter{
+      position: relative;
+      top: -20px;
+    }
+    .email-pricing{
+      position: relative;
+      top: -20px;
+      
+
+    }
+    .schedule-a-demo{
+      position: relative;
+      top: -20px;
+    }
+
+    .header_form input {
+      border: none;
+      outline: none;
+      border-radius: 24px;
+      background: var(--LinkWaterWhite);
+      box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+      width: 327px;
+      height: 48px;
+      color: var(--SanJuanBlue);
+      font-size: 15px;
+      font-weight: 700;
+      padding: 4px 80px 0 27px;
+      margin-bottom: 16px;
+    }
+
+    .footer_black{
+      position: relative;
+      margin-top: -20px;
+    }
+    .footer-pricing{
+      position: relative;
+      top: -3px;
+      right: 10px;
+
+    }
+    .footer-about{
+      position: relative;
+      top: -20px;
+      right: 10px;
+    }
+    .footer-contact{
+      position: relative;
+      top: -25px;
+      right: 12px;
+    }
+    .social_media{
+      position: relative;
+      top: -40px;
+    }
+  }
 
 
 
@@ -630,7 +774,7 @@ body {
   margin: 22px;
   /* transform: translateY(-15px); */
   box-sizing: border-box;
-  width: 100%; 
+  width: 90%; 
 }
 
 
@@ -869,9 +1013,14 @@ li::before {
   font-size: 14px;
   font-family: "Public Sans", sans-serif;
 }
+
 /* DESKTOP>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media screen and (min-width: 1440px) {
 
+  .footer_black{
+    position: relative;
+    top: -5px;
+  }
 
 .FreeText{
   position: relative;
@@ -977,10 +1126,11 @@ li::before {
     display: block;
   }
   #cost1{
+    font-family: "DM Serif Display", serif;
     position: relative;
     top: -90px;
     left: 2px;
-    font-size: 43px;
+    font-size: 48px;
     margin-left: -145px;
     margin-top: -20px;
     font-size: 40px
@@ -988,20 +1138,22 @@ li::before {
   }
 
   #cost2{
+    font-family: "DM Serif Display", serif;
     position: relative;
     top: -80px;
     left: 15px;
-    font-size: 43px;
+    font-size: 48px;
     margin-left: -130px;
     margin-top:-35px;
     font-size: 40px
   }
 
   #cost3{
+    font-family: "DM Serif Display", serif;
     position: relative;
     top: -90px;
     left: 30px;
-    font-size: 43px;
+    font-size: 48px;
     margin-left: -145px;
     margin-top: -20px;
     font-size: 40px;
@@ -1089,19 +1241,19 @@ li::before {
   }
   .header_form{
     position: relative;
-    top: -235px;
+    top: -245px;
     width: 435px;    
     
   }
   .titlefooter{
     position: relative;
-    top: -10px;
+    top: -20px;
 
   }
  
   #button1{
     position: relative;
-    top: -95px;
+    top: -96px;
     left: 5px;
     width: 168px;
     height:48px;
@@ -1110,7 +1262,7 @@ li::before {
   }
   #button2{
     position: relative;
-    top: -90px;
+    top: -93px;
     left: 18px;
     width: 168px;
     height:48px;
@@ -1119,7 +1271,7 @@ li::before {
   }
   #button3{
     position: relative;
-    top: -95px;
+    top: -98px;
     left: 27px;
     width: 168px;
     height:48px;
@@ -1252,14 +1404,14 @@ li::before {
     }
 } */
 
-.text-box {
-  width: 100%; /* Make the boxes take up the full width of the container by default */
+ /* .text-box {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .text-box {
-    width: calc((100% - 2 * 20px) / 3); /* Make the boxes take up one third of the container's width, minus 20px for margins */
-    margin: 10px; /* Add some margin around the boxes */
+    width: calc((100% - 2 * 20px) / 3);
+    margin: 10px; 
   }
 
   .align {
@@ -1271,4 +1423,4 @@ li::before {
   } 
 
 
-}
+}  */
