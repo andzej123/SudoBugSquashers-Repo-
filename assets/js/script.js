@@ -126,7 +126,7 @@ const testValid = (element, pattern) => {
     throw new Error("klaida");
   } else {
     errorMsg.classList.add("hidden");
-    errorMsg.innerHTML = `You just got demo send to your email ${elem.value}`;
+    errorMsg.innerHTML = `You just got demo send to ${elem.value}`;
     errorMsg.classList.remove("hidden");
     setTimeout(function () {
       errorMsg.classList.add("hidden");
