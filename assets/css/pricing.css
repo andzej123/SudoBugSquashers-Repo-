@@ -561,11 +561,11 @@ footer form {
     }
     .BasicPlan{
       position: relative;
-      top: 5px;
+      top: -20px;
     }
     .PremiumPlan{
       position: relative;
-      top: 5px;
+      top: -40px;
     }
     #cost1{
       position: relative;
@@ -586,7 +586,7 @@ footer form {
     }
     .underline2{
       position: relative;
-      top: -2px;
+      top: -10px;
     }
     .underline3{
      position: relative;
@@ -594,7 +594,7 @@ footer form {
     }
     .underline4{
       position: relative;
-      top: -5px;
+      top: -10px;
     }
     .underline5{
       position: relative;
@@ -614,7 +614,8 @@ footer form {
       font-family: "Public Sans", sans-serif;
       font-size: 16px;
       position: relative;
-      top: -2px;
+      top: -5px;
+      left: 2px;
       
     }
     .checked3{
@@ -634,26 +635,30 @@ footer form {
 
     #button1{
       position: relative;
-      top: 8px;
+      top: -9px;
     }
     #button2{
       position: relative;
-      top: 4px;
+      top: -5px;
+    }
+    #button3{
+      position: relative;
+      top: -6px;
     }
 
     .titlefooter{
       position: relative;
-      top: -20px;
+      top: -85px;
     }
     .email-pricing{
       position: relative;
-      top: -20px;
+      top: -80px;
       
 
     }
     .schedule-a-demo{
       position: relative;
-      top: -20px;
+      top: -80px;
     }
 
     .header_form input {
@@ -673,7 +678,7 @@ footer form {
 
     .footer_black{
       position: relative;
-      margin-top: -20px;
+      margin-top: -80px;
     }
     .footer-pricing{
       position: relative;
@@ -808,7 +813,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  /* height: 10vh; */
 }
 
 .footerTitle{
@@ -1017,9 +1022,13 @@ li::before {
 /* DESKTOP>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media screen and (min-width: 1440px) {
 
+  /* .header_form{
+    position:absolute;
+    margin-top: -20px;
+  } */
   .footer_black{
     position: relative;
-    top: -5px;
+    top: 100px;
   }
 
 .FreeText{
@@ -1190,9 +1199,7 @@ li::before {
   }
 
   .grayed-out{
-
     font-size: 17px;
-  
   }
   .grayed-out2{
     position: relative;
@@ -1202,7 +1209,9 @@ li::before {
   }
 
   .header_form {
+    width: 435px; 
     display: flex;
+    top: -138px;
     flex-direction: row;
     justify-content: end;
     margin-left: 200px;
@@ -1239,44 +1248,39 @@ li::before {
   
     
   }
-  .header_form{
-    position: relative;
-    top: -245px;
-    width: 435px;    
-    
-  }
+
   .titlefooter{
     position: relative;
-    top: -20px;
+    top: 85px;
 
   }
  
   #button1{
-    position: relative;
-    top: -96px;
-    left: 5px;
+    position: absolute;
+    margin-top: -90px;
+  margin-left: 10px;
     width: 168px;
     height:48px;
     margin-right: 110px;
     /* margin-top: -198px; */
   }
   #button2{
-    position: relative;
-    top: -93px;
-    left: 18px;
+    position: absolute;
+    margin-top: -85px;
     width: 168px;
     height:48px;
-    margin-right: 165px;
+    margin-right: 135px;
     
   }
   #button3{
-    position: relative;
-    top: -98px;
-    left: 27px;
+    position: absolute;
+    margin: 130px;
+    
     width: 168px;
     height:48px;
-    margin-right: 170px;
+    margin-right: 250px;
     margin-top:5px;
+    z-index: 0;
   }
 
 
@@ -1375,19 +1379,71 @@ li::before {
 
 
 /* TABLET>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* 
+  /* #box1{
+  display:none;
+ } */
+
+
+
+/* @media (min-width: 768px) {
+
+  .align {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: left;
+  
+  }   */
+
+  /* #box1, #box2, #box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: auto;
+  }
+
+
+
+
 .responsive-box{
   
   display:none;
   color: rgba(108, 130, 148, 1);
   margin-left: 80px;
   text-align: left;
+  margin: 100px;
   font-size: 14px;
   font-family: "Public Sans", sans-serif;
 }
 
-@media screen and (max-width: 768px) {
-  #box1{
+#box1, #box2, #box3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align-last: center;
+  width: 220px;
+  line-height: 1.4;
+
+  height: 84px;
+  border: 1px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: auto;
+  word-wrap: break-word;
+  resize: both;
+ 
+}
+
+   
+  
+  .text-box {
+    width: calc((100% - 2 *20px) / 3);
+    margin: 10px; 
+  }
+
+
+   #box1{
     position: relative;
     right: 13px;
     top: -90px;
@@ -1401,26 +1457,19 @@ li::before {
      position: relative;
      right: 45px;
      top: -90px;
-    }
-} */
+    } */
 
- /* .text-box {
-  width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .text-box {
-    width: calc((100% - 2 * 20px) / 3);
-    margin: 10px; 
-  }
-
-  .align {
-    display: flex; 
-    flex-direction: row; 
-    align-items: center; 
-    justify-content: left;
-    margin: 100px;
-  } 
+ 
 
 
-}  */
+
+
+
+  
+
+
+
+
+
+
+
