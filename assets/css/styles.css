@@ -1141,3 +1141,30 @@ footer form {
     margin-left: 484px;
   }
 }
+
+@media only screen and (min-width: 1600px) {
+  .navbar_tablet {
+    margin: 50px 150px;
+    justify-content: space-between;
+  } 
+
+  header {
+    margin: 0;
+    justify-content: center;
+    gap: 200px;
+  }
+
+  .header_phone {
+    margin: 0;
+  }
+
+  .header_text {
+    margin: 0;
+    margin-top: 60px;
+  }
+
+  .partners_section_inner {
+    justify-content: center;
+  }
+}
+
