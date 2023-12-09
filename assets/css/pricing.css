@@ -18,10 +18,6 @@ body {
 
 /* >>>>>> Circles <<<<<<<<<< */
 
-.photoSection_circle {
-  display: none;
-}
-
 .circle_outer_top {
   width: 100vw;
   height: 100vh;
@@ -34,8 +30,7 @@ body {
 
 .circle_top,
 .circle_burger_menu,
-.circle_footer,
-.photoSection_circle {
+.circle_footer {
   width: 780px;
   height: 780px;
   border-radius: 780px;
@@ -196,31 +191,14 @@ body {
   font-family: "Public Sans", sans-serif;
 }
 
-.schedule-a-demo {
-  background-color: var(--DarkPink);
-  border: none;
-  width: 327px;
-  height: 48px;
-  border-radius: 24px;
-  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-  color: var(--LinkWaterWhite);
-  text-align: center;
-  font-weight: 700;
-  letter-spacing: -0.115px;
-  padding-top: 2px;
-  padding-left: 8px;
-  font-size: 15px;
-  font-family: "Public Sans", sans-serif;
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> MAIN <<<<<<<<<<<<<<<<<<<<<<< */
+
+header {
+  margin: 0 24px;
+  margin-top: 45px;
 }
 
-/*  >>>>>> Upper Section <<<<<<< */
-
-.topSection {
-  margin: 24px;
-  margin-top: 44px;
-}
-
-.topSection h1 {
+header h1 {
   color: var(--SanJuanBlue);
   text-align: center;
   font-family: "DM Serif Display", serif;
@@ -228,101 +206,83 @@ body {
   font-weight: 400;
   line-height: 36px;
   letter-spacing: -0.246px;
-  padding: 0 2px;
 }
 
-.topSection h2 {
-  color: var(--SanJuanBlue);
+main h2 {
+  color: var(--DarkPink);
   text-align: center;
   font-family: "DM Serif Display", serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
   letter-spacing: -0.185px;
-  margin-top: 47px;
-  margin-bottom: 0;
+  margin-top: 48px;
 }
 
-.topSection p {
-  color: var(--LightSanJuanBlue);
-  text-align: center;
-  font-weight: 400;
-  line-height: 28px;
-  margin-top: 17px;
-}
-
-.photoSection {
-  margin-top: 76px;
-}
-
-.photoSection img {
-  width: 100%;
-}
-
-.teamMembersSection {
-  margin: 24px;
-}
-
-.teamMembersSection h2 {
-  color: var(--DarkPink);
+.price {
+  color: var(--SanJuanBlue);
   text-align: center;
   font-family: "DM Serif Display", serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 72px;
   letter-spacing: -0.431px;
-  margin: 0;
-  margin-bottom: 34px;
-}
-
-.teamMembersSection p {
-  color: var(--SanJuanBlue);
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
-  margin: 0;
-  margin-top: 15px;
-}
-
-.topHr {
-  height: 1px;
-  opacity: 0.25;
-  background: var(--SanJuanBlue);
-  margin-top: 45px;
-}
-
-.TMS_secondBlock h2 {
-  margin-bottom: 30px;
-}
-
-.TMS_thirdBlock h2 {
-  margin-bottom: 16px;
-}
-
-.bottomSection {
-  margin: 24px;
-  margin-top: 44px;
-}
-
-.bottomSection h2 {
-  color: var(--SanJuanBlue);
-  text-align: center;
-  font-family: "DM Serif Display", serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 32px;
-  letter-spacing: -0.185px;
-  margin-top: 47px;
+  margin-top: 82px;
   margin-bottom: 0;
 }
 
-.bottomSection p {
-  color: var(--LightSanJuanBlue);
-  text-align: center;
+main ul {
+  border-top: 1px solid #aca9a9;
+  border-bottom: 1px solid #aca9a9;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 24px;
+  margin-top: 24px;
+  padding: 16px 0;
+}
+
+main li {
+  color: var(--SanJuanBlue);
+  font-size: 16px;
   font-weight: 400;
   line-height: 28px;
-  margin-top: 17px;
+  opacity: 0.5;
+  margin: 8px;
+  margin-left: 134px;
+}
+
+.checked {
+  position: relative;
+  left: -15px;
+  opacity: 1;
+}
+
+.checked::before {
+  content: url(/assets/images/pricinglistcheck.svg);
+  position: relative;
+  left: -24px;
+}
+
+.button_container {
+  text-align: center;
+  margin-top: 23px;
+}
+
+.main_text {
+  display: none;
+}
+
+main button {
+  border-radius: 24px;
+  border: 1px solid var(--SanJuanBlue);
+  color: var(--SanJuanBlue);
+  background-color: var(--BgColor);
+  font-family: "Public Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.115px;
+  padding: 16px 28px 14px 28px;
 }
 
 /*  >>>>>> Footer <<<<<<< */
@@ -332,6 +292,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin-bottom: 80px;
 }
 
 .footer_form_inner input {
@@ -352,6 +313,23 @@ body {
 .footer_form_inner input::placeholder {
   color: var(--SanJuanBlue);
   opacity: 0.5;
+}
+
+.schedule-a-demo {
+  background-color: var(--DarkPink);
+  border: none;
+  width: 327px;
+  height: 48px;
+  border-radius: 24px;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  color: var(--LinkWaterWhite);
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.115px;
+  padding-top: 2px;
+  padding-left: 8px;
+  font-size: 15px;
+  font-family: "Public Sans", sans-serif;
 }
 
 .footer_black {
@@ -398,12 +376,8 @@ footer h2 {
   font-size: 32px;
   line-height: 36px;
   letter-spacing: -0.246px;
-  margin-top: 49px;
+  margin-top: 80px;
   margin-bottom: 30px;
-}
-
-footer form {
-  margin-bottom: 80px;
 }
 
 .social_media {
@@ -472,7 +446,8 @@ footer form {
 .schedule-a-demo:active,
 .social_media a:active,
 .footer_list li:active,
-.schedule_a_demo_navar:active {
+.schedule_a_demo_navar:active,
+.button_container button:active {
   transform: translateY(2px);
 }
 
@@ -499,7 +474,13 @@ footer form {
     background-color: var(--CharmPink);
   }
 
-  .footer_form_inner input:hover {
+  .header_form input:hover {
+    cursor: pointer;
+  }
+
+  .button_container button:hover {
+    color: var(--LinkWaterWhite);
+    background-color: var(--SanJuanBlue);
     cursor: pointer;
   }
 
@@ -587,131 +568,74 @@ footer form {
     border: none;
   }
 
-  .inputField {
-    left: 20px;
-  }
-
-  .topSection {
-    margin: 0px;
-    margin-top: 44px;
-  }
-
-  .topSection h1 {
-    font-size: 48px;
-    line-height: 56px;
-    letter-spacing: -0.369px;
-    padding: 0 2px;
-    margin: 0 98px;
+  header {
     margin-top: 75px;
   }
 
-  .topSection h2 {
-    text-align: start;
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -0.246px;
-    margin-top: 47px;
-    margin-bottom: 0;
+  header h1 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.369px;
   }
 
-  .topSection p {
-    text-align: start;
+  .main_text {
+    display: block;
+    color: var(--LightSanJuanBlue);
+    text-align: center;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 0 2px;
+    margin: 0;
+    margin-top: 12px;
+    min-height: 84px;
   }
 
-  .TS_secondBlock {
+  main {
     display: grid;
-    margin: 0 40px;
-    margin-top: 17px;
-    grid-template-columns: 30% 70%;
-  }
-
-  .TS_secondBlock p {
-    margin-top: 45px;
-    margin-left: 25px;
-  }
-
-  .TS_thirdBlock {
-    display: grid;
-    margin: 0 40px;
-    margin-top: 17px;
-    grid-template-columns: 30% 70%;
-  }
-
-  .TS_thirdBlock h2 {
-    margin-top: 33px;
-  }
-
-  .TS_thirdBlock p {
-    margin-top: 33px;
-    margin-left: 25px;
-  }
-
-  .photoSection {
-    margin-top: 77px;
-  }
-
-  .teamMembersSection {
-    display: grid;
-    margin: 0 40px;
-    margin-top: 61px;
+    grid-template-columns: 33% 31% 33%;
     column-gap: 10px;
-    grid-template-columns: 33% 33% 33%;
-  }
-
-  .teamMembersSection h2 {
-    text-align: start;
-    margin: 0;
-    margin-bottom: 16px;
-  }
-
-  .teamMembersSection p {
-    text-align: start;
-    margin: 0;
-    margin-top: 16px;
-  }
-
-  .teamMembersSection div {
-    border-top: 1px solid rgb(193, 190, 190);
-    border-bottom: 1px solid rgb(193, 190, 190);
-  }
-
-  .teamMembersSection hr {
-    display: none;
-  }
-
-  .TMS_secondBlock h2 {
-    position: relative;
-    left: -5px;
-  }
-
-  .TMS_thirdBlock h2 {
-    position: relative;
-    left: -8px;
-  }
-
-  .bottomSection {
     margin: 0 40px;
+    margin-top: 70px;
   }
 
-  .bottomSection div {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    align-items: start;
-    margin-top: 65px;
+  main ul {
+    margin: 0;
+    margin-top: 21px;
   }
 
-  .bottomSection h2 {
-    font-size: 32px;
+  main li {
+    margin: 0;
+    margin: 8px 0;
+    margin-left: 80px;
+  }
+
+  main h2 {
     line-height: 40px;
-    letter-spacing: -0.246px;
-    text-align: start;
     margin: 0;
   }
 
-  .bottomSection p {
-    text-align: start;
+  .price {
+    font-size: 48px;
+    letter-spacing: -0.369px;
     margin: 0;
-    margin-left: 25px;
+    margin-top: 20px;
+  }
+
+  .second_block li {
+    margin-left: 77px;
+  }
+
+  .third_block li {
+    margin-left: 87px;
+  }
+
+  .first_block .button_container {
+    margin-right: 5px;
+  }
+
+  .third_block .button_container {
+    margin-left: 5px;
   }
 
   .footer_form_inner {
@@ -720,6 +644,10 @@ footer form {
     margin-top: 30px;
     margin-bottom: 0;
     margin-right: 117px;
+  }
+
+  .inputField {
+    left: 20px;
   }
 
   .footer_form_inner button {
@@ -737,8 +665,8 @@ footer form {
     line-height: 56px;
     font-weight: 400;
     letter-spacing: -0.369px;
-    margin-top: 72px;
-    margin-bottom: 8px;
+    margin-top: 100px;
+    margin-bottom: 9px;
   }
 
   .footer_black {
@@ -781,123 +709,91 @@ footer form {
     margin-left: 485px;
   }
 
-  .topSection {
-    margin: 0 260px;
-    margin-top: 84px;
+  header {
+    margin: 0 165px;
+    margin-top: 83px;
   }
 
-  .topSection h1 {
+  header h1 {
+    text-align: start;
     font-size: 56px;
     line-height: 56px;
     letter-spacing: -0.431px;
-    margin: 0;
-    text-align: start;
-    margin-right: 270px;
-    padding: 0;
   }
 
-  .topSection h2 {
+  main {
+    margin: 0 165px;
+    margin-top: 72px;
+    grid-template-columns: 31.5% 31.5% 31.5%;
+    column-gap: 30px;
+  }
+
+  main h2 {
     font-size: 32px;
     line-height: 40px;
     letter-spacing: -0.246px;
+    text-align: start;
+  }
+  .main_text {
+    text-align: start;
+    padding: 0;
+    margin-top: 15px;
+    min-height: 56px;
+  }
+
+  .price {
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: -0.431px;
+    text-align: start;
     margin: 0;
+    margin-top: 8px;
   }
 
-  .topSection p {
+  main ul {
     margin: 0;
+    margin-top: 25px;
   }
 
-  .TS_secondBlock {
-    margin: 0;
-    align-items: start;
-    margin-top: 70px;
+  main li {
+    margin: 8px 0;
+    margin-left: 37px;
   }
 
-  .TS_thirdBlock {
-    margin: 0;
-    margin-top: 57px;
+  .second_block li {
+    margin-left: 37px;
   }
 
-  .TS_secondBlock p {
-    margin-left: 7px;
+  .third_block li {
+    margin-left: 37px;
   }
 
-  .TS_thirdBlock p {
-    margin-left: 7px;
+  .button_container {
+    text-align: start;
   }
 
-  .photoSection {
-    margin-top: 100px;
-  }
-
-  .photoSection_circle {
-    background-color: var(--CircleColor);
-    top: 625px;
-    left: -520px;
-    z-index: -1;
-    display: block;
-  }
-
-  .teamMembersSection {
-    margin: 0 165px;
-    margin-top: 70px;
-  }
-
-  .TMS_thirdBlock {
-    margin-left: 5px;
-  }
-
-  .TMS_secondBlock h2 {
-    left: 0;
-  }
-
-  .TMS_thirdBlock h2 {
-    left: 0;
-  }
-
-  .bottomSection {
-    margin: 0 260px;
-  }
-
-  .bottomSection h2 {
-    font-size: 32px;
-    line-height: 40px; 
-    letter-spacing: -0.246px;
-    margin-top: 0px;
-    margin-bottom: 0;
-  }
-
-  .bottomSection p {
-    margin: 0;
-    margin-left: 8px;
-  }
-
-  .bottomSection div {
-    margin-top: 72px;    
-  }
-
-  .bottomSection div:nth-child(2) {
-    margin-top: 56px;
+  .third_block .button_container {
+    margin-left: 0;
   }
 
   .footer_form {
     display: flex;
     justify-content: space-evenly;
     gap: 185px;
-    margin-top: 50px;
+    margin-top: 46px;
   }
 
   .footer_form h2 {
     margin-top: 50px;
   }
 
-  .footer_form .footer_form_inner {
+  .footer_form_inner {
     margin-top: 54px;
   }
 
   .footer_black {
     justify-content: start;
-    margin-top: 83px;
+    margin-top: 84px;
   }
 
   .footer_api_logo {
