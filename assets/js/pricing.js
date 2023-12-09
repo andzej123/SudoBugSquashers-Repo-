@@ -54,9 +54,7 @@ function myFunction() {
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 
-const aboutForm = document.querySelector(".about_form");
-
-// console.log(aboutForm);
+const pricingForm = document.querySelector(".pricing_form");
 
 const testValid = (element, pattern) => {
   const elem = element;
@@ -79,9 +77,9 @@ const testValid = (element, pattern) => {
   }
 };
 
-aboutForm.addEventListener("submit", (event) => {
+pricingForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  const userName = aboutForm.querySelector("#username");
+  const userName = pricingForm.querySelector("#username");
   const pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
   try {
     testValid(userName, pattern);

@@ -1,11 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>pricing</h1>
-</body>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/images/MicrosoftTeams-image.ico"
+    />
+    <link rel="stylesheet" href="assets/css/pricing.css" />
+    <script type="module" defer src="assets/js/pricing.js"></script>
+  </head>
+
+  <body>
+    <div class="circle_outer_top">
+      <div class="circle_top"></div>
+    </div>
+    <nav>
+      <div class="burger_menu_logos">
+        <div class="pay_api_logo">
+          <a href="index.html"
+            ><img src="assets/images/pay-api-logo.svg" alt="pay api logo"
+          /></a>
+        </div>
+        <button class="burger_button">
+          <img src="assets/images/burger-logo.svg" alt="burger button" />
+        </button>
+      </div>
+      <div class="burger_menu">
+        <div class="circle_burger_menu"></div>
+        <div class="burger_menu_x_outer">
+          <div class="burger_menu_x">
+            <img
+              src="assets/images/burger-x.svg"
+              alt="burger menu close button"
+            />
+          </div>
+        </div>
+        <hr class="burger_menu_line" />
+        <ul class="burger_menu_list">
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="schedule-a-demo-outer-burger">
+          <button disabled class="schedule-a-demo-burger">
+            Schedule a Demo
+          </button>
+        </div>
+      </div>
+      <div class="navbar_tablet">
+        <div class="pay_api_logo_tablet">
+          <a href="index.html"
+            ><img src="assets/images/pay-api-logo.svg" alt="pay api logo"
+          /></a>
+        </div>
+        <div class="navbar_list">
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <button disabled class="schedule_a_demo_navar">
+            Schedule a Demo
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Pricing</h1>
+    </header>
+
+    <main>
+      <div class="first_block">
+        <h2>Free Plan</h2>
+        <p class="main_text">
+          Build and test using our core set of products with up to 100 API
+          requests
+        </p>
+        <p class="price">$0.00</p>
+        <ul>
+          <li class="checked">Transactions</li>
+          <li class="checked">Auth</li>
+          <li class="checked">Identity</li>
+          <li>Investments</li>
+          <li>Assets</li>
+          <li>Liabilities</li>
+          <li>Income</li>
+        </ul>
+        <div class="button_container">
+          <button>Request Access</button>
+        </div>
+      </div>
+      <div class="second_block">
+        <h2>Basic Plan</h2>
+        <p class="main_text">
+          Launch your project with unlimited requests and no contractual
+          minimums
+        </p>
+        <p class="price">$249.00</p>
+        <ul>
+          <li class="checked">Transactions</li>
+          <li class="checked">Auth</li>
+          <li class="checked">Identity</li>
+          <li class="checked">Investments</li>
+          <li class="checked">Assets</li>
+          <li>Liabilities</li>
+          <li>Income</li>
+        </ul>
+        <div class="button_container">
+          <button>Request Access</button>
+        </div>
+      </div>
+      <div class="third_block">
+        <h2>Premium Plan</h2>
+        <p class="main_text">
+          Get tailored solutions, volume pricing, and dedicated support for your
+          team
+        </p>
+        <p class="price">$499.00</p>
+        <ul>
+          <li class="checked">Transactions</li>
+          <li class="checked">Auth</li>
+          <li class="checked">Identity</li>
+          <li class="checked">Investments</li>
+          <li class="checked">Assets</li>
+          <li class="checked">Liabilities</li>
+          <li class="checked">Income</li>
+        </ul>
+        <div class="button_container">
+          <button>Request Access</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer_form">
+        <h2>Ready to start?</h2>
+        <form class="footer_form_inner pricing_form">
+          <input type="text" id="username" placeholder="Enter email address" />
+          <span class="inputField hidden"></span>
+          <button type="submit" class="schedule-a-demo">Schedule a Demo</button>
+        </form>
+      </div>
+      <div class="footer_black">
+        <div class="circle_footer"></div>
+        <div class="footer_api_logo">
+          <a href="index.html"
+            ><img src="assets/images/api-logo-footer.svg" alt="Pay api logo"
+          /></a>
+        </div>
+        <ul class="footer_list">
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="social_media">
+          <a href="http://www.facebook.com" target="_blank"
+            ><img src="assets/images/icon_facebook.svg" alt="facebook icon"
+          /></a>
+          <a href="http://www.twitter.com" target="_blank"
+            ><img src="assets/images/icon_twitter.svg" alt="twitter icon"
+          /></a>
+          <a href="http://www.linkedin.com" target="_blank"
+            ><img src="assets/images/icon_linkedin.svg" alt="linkedin icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

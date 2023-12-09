@@ -6,17 +6,17 @@
 :root {
   /* 01 Colors */
   /* PRIMARY */
-  --DarkPink: #BA4270;
-  --LinkWaterWhite: #FBFCFE;
-  --BgColor: #EDF3F8;
-  --CircleColor : #D2DBE3;
-  --CircleBlackBg: #1F2C38;
+  --DarkPink: #ba4270;
+  --LinkWaterWhite: #fbfcfe;
+  --BgColor: #edf3f8;
+  --CircleColor: #d2dbe3;
+  --CircleBlackBg: #1f2c38;
 
   /* SECONDARY */
-  --SanJuanBlue: #36536B;
-  --MirageBlue: #1B262F;
-  --CharmPink: #DA6D97;
-  --LightSanJuanBlue: #6C8294;
+  --SanJuanBlue: #36536b;
+  --MirageBlue: #1b262f;
+  --CharmPink: #da6d97;
+  --LightSanJuanBlue: #6c8294;
 
   /* 02 Typography */
   /* HEADINGS */
