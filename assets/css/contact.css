@@ -9,15 +9,17 @@
 }
 
 * {
+  -webkit-tap-highlight-color: transparent;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #edf3f8;
+  background-color: var(--BgColor);
   margin: 0;
   padding: 0;
   font-family: "Public Sans", sans-serif;
   font-size: 15px;
+  overflow-x: hidden;
 }
 
 /* >>>>>> Circles <<<<<<<<<< */
@@ -43,30 +45,41 @@ body {
 }
 
 .circle_top {
-  background-color: var(--circle);
-  top: -644px;
-  left: 74px;
+  background-color: var(--CircleColor);
+  top: -645px;
+  left: 70px;
   z-index: -1;
 }
 
 .circle_burger_menu {
-  background-color: var(--burger-menu-circle);
-  top: -545px;
-  left: -282px;
-}
-
-.circle_partners_section {
-  background-color: var(--burger-menu-circle);
-  top: -600px;
-  left: -202px;
-  z-index: 0;
+  background-color: var(--CircleBlackBg);
+  top: -645px;
 }
 
 .circle_footer {
-  background-color: var(--burger-menu-circle);
-  top: 176px;
-  left: -202px;
+  background-color: var(--CircleBlackBg);
+  top: calc(176px - (100vw - 375px) * 0.8244274809160305);
+  left: calc(-202px + (100vw - 375px) * 1.493638676844784);
   z-index: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .circle_top {
+    top: -464px !important;
+    left: 505px !important;
+  }
+
+  .circle_footer {
+    top: -148px;
+    left: calc(385px + (100vw - 768px) * 0.9970238095238095);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .circle_top {
+    top: -527px !important;
+    left: 800px !important;
+  }
 }
 
 /* <><><><><><><>   Burger Menu  <><><><><><><><><> */
@@ -235,44 +248,88 @@ footer form {
   margin: 39px 0;
 }
 
+/* pop-ups */
+
+.upper_form {
+  position: relative;
+}
+
+.inputField {
+  position: absolute;
+  top: -63px;
+  left: 20px;
+  background-color: #da6d97;
+  min-height: 54px;
+  font-weight: 400;
+  padding: 10px 15px;
+  border-radius: 15px;
+  color: white;
+  opacity: 0.9;
+  transition: opacity 150ms ease-in-out;
+  pointer-events: none;
+}
+
+.inputField:after {
+  content: "";
+  position: absolute;
+  top: 54px;
+  left: 50px;
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-top-color: #da6d97;
+}
+
+.hidden {
+  opacity: 0;
+  background-color: #da6d97;
+}
+
 /*   >>>>>>>> Hover states <<<<<<<<<< */
 
-.pay_api_logo:hover,
-.footer_api_logo img:hover,
-.burger_button:hover,
-.burger_menu_x:hover {
-  transform: translateY(2px);
-  cursor: pointer;
+@media (hover: hover) {
+  .pay_api_logo:hover,
+  .footer_api_logo img:hover,
+  .burger_button:hover,
+  .burger_menu_x:hover,
+  .pay_api_logo_tablet:hover {
+    transform: translateY(2px);
+    cursor: pointer;
+  }
+
+  .burger_menu_list a:hover,
+  .footer_list a:hover,
+  .navbar_list a:hover {
+    opacity: 1;
+  }
+
+  .schedule-a-demo-burger:hover,
+  .schedule-a-demo:hover,
+  .schedule_a_demo_navar:hover {
+    cursor: pointer;
+    background-color: var(--charm-pink);
+  }
+
+  .header_form input:hover {
+    cursor: pointer;
+  }
+
+  .schedule-a-demo:hover {
+    background-color: var(--charm-pink);
+    cursor: pointer;
+  }
+
+
+  .social_media img:hover {
+    filter: invert(33%) sepia(75%) saturate(701%) hue-rotate(290deg)
+      brightness(91%) contrast(88%);
+  }
 }
 
-.burger_menu_list a:hover,
-.footer_list a:hover {
-  opacity: 1;
-}
-
-.schedule-a-demo-burger:hover {
-  cursor: pointer;
-  background-color: var(--charm-pink);
-}
-
-.header_form input:hover {
-  cursor: pointer;
-}
-
-.schedule-a-demo:hover {
-  background-color: var(--charm-pink);
-  cursor: pointer;
-}
-
-.ps_about_us button:hover {
-  color: var(--mirage-blue);
-  background-color: var(--link-water-white);
-  cursor: pointer;
-}
-
-.social_media img:hover {
-  filter: invert(33%) sepia(75%) saturate(701%) hue-rotate(290deg)
-    brightness(91%) contrast(88%);
+@media only screen and (min-width: 450px) {
+  .inputField {
+    left: 25vw;
+  }
 }
 
 /* >>>>>>>>>>> Active states <<<<<<<<<<<<< */
@@ -298,6 +355,7 @@ footer form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .header_form input {
@@ -541,6 +599,10 @@ h1 {
 /*Pritaikymas tablet*/
 
 @media only screen and (min-width: 768px) {
+  .inputField {
+    left: 20px;
+  }
+
   h1 {
     color: #36536b;
     font-size: 58px;
@@ -729,7 +791,6 @@ h1 {
     color: var(--SanJuanBlue);
     font-family: "Public Sans", sans-serif;
     font-weight: 700;
-    opacity: 0.7;
     margin-top: 3px;
     margin-right: 22px;
   }
@@ -771,9 +832,8 @@ h1 {
   }
   .main-title {
     margin-right: 500px;
-    margin-left:-3px;
+    margin-left: -3px;
     width: 911px;
-    
   }
   h1 {
     font-size: 64px;
@@ -782,7 +842,6 @@ h1 {
     font-weight: 400;
     line-height: 56px;
     word-wrap: break-word;
-    
   }
   .join-message-container h4 {
     text-align: left;
@@ -793,17 +852,16 @@ h1 {
     word-wrap: break-word;
     width: 445px;
     margin-top: 170px;
-    margin-left:-21px;
+    margin-left: -21px;
   }
-  
-  
+
   .enterprises-logos-container div:nth-child(1) {
     margin-left: -65px;
-    margin-top:10px;
+    margin-top: 10px;
   }
-.enterprises-logos-container div:nth-child(2) {
+  .enterprises-logos-container div:nth-child(2) {
     margin-left: -38px;
-    margin-top:8px;
+    margin-top: 8px;
   }
   .enterprises-logos-container div:nth-child(3) {
     margin-left: 22px;
@@ -811,17 +869,17 @@ h1 {
   }
   .enterprises-logos-container div:nth-child(4) {
     margin-left: -64px;
-    margin-top:4px;
+    margin-top: 4px;
   }
   .enterprises-logos-container div:nth-child(5) {
-    margin-left:-37px;
-    margin-top:3px;
+    margin-left: -37px;
+    margin-top: 3px;
   }
   .enterprises-logos-container div:nth-child(6) {
-    margin-left:24px;
-    margin-top:0px;
-  } 
-  
+    margin-left: 24px;
+    margin-top: 0px;
+  }
+
   .navbar_tablet {
     margin: 40px 163px;
     justify-content: start;
@@ -879,7 +937,6 @@ h1 {
 
   .burger_menu_list a:hover,
   .footer_list a:hover,
-  .navbar_list a:hover,
   .navbar_list a:hover {
     opacity: 1;
   }
