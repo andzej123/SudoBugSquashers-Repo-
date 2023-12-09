@@ -563,7 +563,6 @@ footer form {
 }
 
 @media (hover: hover) {
-
   .pay_api_logo:hover,
   .footer_api_logo img:hover,
   .burger_button:hover,
@@ -601,7 +600,8 @@ footer form {
   }
 
   .social_media img:hover {
-    filter: invert(33%) sepia(75%) saturate(701%) hue-rotate(290deg) brightness(91%) contrast(88%);
+    filter: invert(33%) sepia(75%) saturate(701%) hue-rotate(290deg)
+      brightness(91%) contrast(88%);
   }
 
   .footer_list li:hover {
@@ -1146,7 +1146,7 @@ footer form {
   .navbar_tablet {
     margin: 50px 150px;
     justify-content: space-between;
-  } 
+  }
 
   header {
     margin: 0;
@@ -1167,4 +1167,3 @@ footer form {
     justify-content: center;
   }
 }
-
