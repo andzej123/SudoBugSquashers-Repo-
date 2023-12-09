@@ -450,7 +450,7 @@ footer form {
 .custom-checkbox
   > .custom-checkbox-input:checked
   + .custom-checkbox-show--checkbox {
-  background-image: url("/assets/check.svg");
+  background-image: url("/assets/images/check.svg");
   background-color: #ba4270;
 }
 
