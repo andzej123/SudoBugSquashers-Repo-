@@ -113,6 +113,7 @@ body {
   padding: 48px 24px;
   transition: 0.2s;
   min-height: 667px;
+  height: 100vh;
   transform: translateX(100vw);
   overflow: hidden;
   z-index: 7;
@@ -236,6 +237,11 @@ footer form {
   gap: 24px;
 }
 
+.footer_api_logo {
+  position: relative;
+  z-index: 1;
+}
+
 .social_media a {
   display: grid;
   align-items: center;
@@ -319,7 +325,6 @@ footer form {
     cursor: pointer;
   }
 
-
   .social_media img:hover {
     filter: invert(33%) sepia(75%) saturate(701%) hue-rotate(290deg)
       brightness(91%) contrast(88%);
@@ -348,6 +353,10 @@ footer form {
 .social_media a:active,
 .footer_list li:active,
 .schedule_a_demo_navar:active {
+  transform: translateY(2px);
+}
+
+.contact-form button[type="submit"]:active {
   transform: translateY(2px);
 }
 
@@ -529,11 +538,6 @@ footer form {
   font-weight: 700;
   word-wrap: break-word;
   cursor: pointer;
-}
-
-.contact-form button[type="submit"]:hover {
-  background-color: #36536b;
-  color: #fbfcfe;
 }
 
 .join-message-container h4 {
@@ -933,6 +937,11 @@ h1 {
   .pay_api_logo_tablet:hover {
     transform: translateY(2px);
     cursor: pointer;
+  }
+
+  .contact-form button[type="submit"]:hover {
+    background-color: #36536b;
+    color: #fbfcfe;
   }
 
   .burger_menu_list a:hover,
