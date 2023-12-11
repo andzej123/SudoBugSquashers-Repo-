@@ -252,7 +252,7 @@ header h1 {
   color: var(--SanJuanBlue);
   font-size: 15px;
   font-weight: 700;
-  padding: 4px 80px 0 27px;
+  padding: 4px 80px 2px 27px;
   margin-bottom: 16px;
 }
 
@@ -365,6 +365,7 @@ header span {
   position: relative;
   padding-top: 4px;
   word-spacing: 1px;
+  font-size: 15px;
 }
 
 /* >>>>>>  api logo <<<<<<<<<< */
@@ -715,6 +716,7 @@ footer form {
     width: 173px;
     position: absolute;
     left: 272px;
+    top: 0;
   }
 
   header p {
@@ -1149,17 +1151,12 @@ footer form {
   } 
 
   header {
-    margin: 0;
     justify-content: center;
     gap: 200px;
   }
 
-  .header_phone {
-    margin: 0;
-  }
 
   .header_text {
-    margin: 0;
     margin-top: 60px;
   }
 
