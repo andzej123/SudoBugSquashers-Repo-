@@ -799,8 +799,8 @@ h1 {
     margin-right: 22px;
   }
 
-  .navbar_list span:nth-child(2) {
-    margin-right: 5px;
+  .navbar_list a:nth-child(2) {
+    margin-right: 4px;
     margin-left: 1px;
   }
 
