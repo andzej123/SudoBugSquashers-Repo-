@@ -137,7 +137,7 @@ const testValid = (element, pattern) => {
 
 upperForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  const userName = upperForm.querySelector("#username");
+  const userName = upperForm.querySelector("#usernameUpper");
   const pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
   try {
     testValid(userName, pattern);
@@ -149,7 +149,7 @@ upperForm.addEventListener("submit", (event) => {
 
 lowerForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  const userName = lowerForm.querySelector("#username");
+  const userName = lowerForm.querySelector("#usernameLower");
   const pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
   try {
     testValid(userName, pattern);
